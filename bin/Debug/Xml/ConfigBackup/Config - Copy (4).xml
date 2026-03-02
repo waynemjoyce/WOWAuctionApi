@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClientID>364aef7289e24a3b838c778baf56133c</ClientID>
+  <ClientSecret>3OlsVa5pklqoI2VvHYc2kpfagY8itsAg</ClientSecret>
+  <TSMKey>A7iR0Pu0leO4Fl_lBjqZc1rl0GMt8ms8</TSMKey>
+  <DefaultSearchProfile>Draconic Plans</DefaultSearchProfile>
+  <StartupFlagRealms>false</StartupFlagRealms>
+  <StartupLoadRealms>false</StartupLoadRealms>
+  <StartupDoSearch>false</StartupDoSearch>
+  <FastCopySpeed>0.7</FastCopySpeed>
+  <SlowCopySpeed>1</SlowCopySpeed>
+  <SourcePath>C:\WOWBotDev\APITest\</SourcePath>
+  <SourcePathBackup>D:\Backup\Games\World of Warcraft\WOWBot Backups\WOWApi\</SourcePathBackup>
+  <Teams>
+    <Team Name="Blue">
+      <ProcessId>84448</ProcessId>
+      <BNetAccount>adamgock1993@gmail.com</BNetAccount>
+      <WoWAccount>WoW5</WoWAccount>
+      <Active>true</Active>
+      <ToolBarColor>#262580</ToolBarColor>
+      <SearchBarColor>#262580</SearchBarColor>
+      <AuctionBarColor>#262580</AuctionBarColor>
+      <FormBackColor>#0F0E29</FormBackColor>
+    </Team>
+    <Team Name="Green">
+      <ProcessId>116104</ProcessId>
+      <BNetAccount>adamgock1993@gmail.com</BNetAccount>
+      <WoWAccount>WoW6</WoWAccount>
+      <Active>true</Active>
+      <ToolBarColor>#24782F</ToolBarColor>
+      <SearchBarColor>#24782F</SearchBarColor>
+      <AuctionBarColor>#24782F</AuctionBarColor>
+      <FormBackColor>#091F0A</FormBackColor>
+    </Team>
+  </Teams>
+  <CopyObjects>
+    <CopyObject CopyText="Draconic Comb" ShortName="Draconic" Active="true" ButtonColor="#0B1E00" />
+    <CopyObject CopyText="Azureweave Expedition Backpack" ShortName="Backpack" Active="true" ButtonColor="#00001E" />
+  </CopyObjects>
+  <Realms>
+    <Realm RealmName="Aerie Peak" Highlight="0" SendTo="Aerible" Area="US" ConnectedRealmId="1426" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#A64D79" ForeColor="#FFFFFF" />
+    <Realm RealmName="Alexstrasza" Highlight="0" SendTo="Alexricky" Area="US" ConnectedRealmId="1070" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#45818E" ForeColor="#FFFFFF" />
+    <Realm RealmName="Alleria" Highlight="0" SendTo="Allerick" Area="US" ConnectedRealmId="52" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Area 52" Highlight="0" SendTo="Areabike" Area="US" ConnectedRealmId="3676" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Black Dragonflight" Highlight="0" SendTo="Blackbee" Area="US" ConnectedRealmId="96" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#434343" ForeColor="#FFFFFF" />
+    <Realm RealmName="Boulderfist" Highlight="0" SendTo="Boulda" Area="US" ConnectedRealmId="1185" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#6AA84F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Cenarion Circle" Highlight="0" SendTo="Cendriley" Area="US" ConnectedRealmId="125" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#3C78D8" ForeColor="#FFFFFF" />
+    <Realm RealmName="Dalaran" Highlight="0" SendTo="Dalalama" Area="US" ConnectedRealmId="3683" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#FD7800" ForeColor="#FFFFFF" />
+    <Realm RealmName="Dawnbringer" Highlight="0" SendTo="Dawnfrench" Area="US" ConnectedRealmId="160" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#A64D79" ForeColor="#FFFFFF" />
+    <Realm RealmName="Duskwood" Highlight="0" SendTo="Duskitt" Area="US" ConnectedRealmId="64" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#FD7800" ForeColor="#FFFFFF" />
+    <Realm RealmName="Eitrigg" Highlight="0" SendTo="Eitonne" Area="US" ConnectedRealmId="47" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Elune" Highlight="0" SendTo="Eluba" Area="US" ConnectedRealmId="67" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#DBA40A" ForeColor="#FFFFFF" />
+    <Realm RealmName="Emerald Dream" Highlight="0" SendTo="Emerton" Area="US" ConnectedRealmId="162" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#6AA84F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Farstriders" Highlight="0" SendTo="Farstand" Area="US" ConnectedRealmId="12" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#45818E" ForeColor="#FFFFFF" />
+    <Realm RealmName="Fenris" Highlight="0" SendTo="Fenerby" Area="US" ConnectedRealmId="114" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#990000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Fizzcrank" Highlight="0" SendTo="Fizzcake" Area="US" ConnectedRealmId="106" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#FD7800" ForeColor="#FFFFFF" />
+    <Realm RealmName="Galakrond" Highlight="0" SendTo="Galafray" Area="US" ConnectedRealmId="54" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#A64D79" ForeColor="#FFFFFF" />
+    <Realm RealmName="Greymane" Highlight="0" SendTo="Greymal" Area="US" ConnectedRealmId="158" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#45818E" ForeColor="#FFFFFF" />
+    <Realm RealmName="Hyjal" Highlight="0" SendTo="Hyjude" Area="US" ConnectedRealmId="3661" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Illidan" Highlight="0" SendTo="Illpill" Area="US" ConnectedRealmId="57" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#DBA40A" ForeColor="#FFFFFF" />
+    <Realm RealmName="Jaedenar" Highlight="0" SendTo="Jaedshoes" Area="US" ConnectedRealmId="1129" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#3C78D8" ForeColor="#FFFFFF" />
+    <Realm RealmName="Kil'Jaeden" Highlight="0" SendTo="Kilty" Area="US" ConnectedRealmId="9" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Lightbringer" Highlight="0" SendTo="Lightbabe" Area="US" ConnectedRealmId="3694" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#434343" ForeColor="#FFFFFF" />
+    <Realm RealmName="Moon Guard" Highlight="0" SendTo="Moonblue" Area="US" ConnectedRealmId="3675" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#6AA84F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Nesingwary" Highlight="0" SendTo="Nesquick" Area="US" ConnectedRealmId="1184" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Proudmoore" Highlight="0" SendTo="Proudboyz" Area="US" ConnectedRealmId="5" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#DBA40A" ForeColor="#FFFFFF" />
+    <Realm RealmName="Sargeras" Highlight="0" SendTo="Sargument" Area="US" ConnectedRealmId="76" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#6AA84F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Shadowmoon" Highlight="0" SendTo="Shadowmoony" Area="US" ConnectedRealmId="154" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Silvermoon" Highlight="0" SendTo="Silvercoin" Area="US" ConnectedRealmId="86" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#FD7800" ForeColor="#FFFFFF" />
+    <Realm RealmName="Stormrage" Highlight="0" SendTo="Stormbrain" Area="US" ConnectedRealmId="60" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#434343" ForeColor="#FFFFFF" />
+    <Realm RealmName="The Scryers" Highlight="0" SendTo="Scryme" Area="US" ConnectedRealmId="75" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#3C78D8" ForeColor="#FFFFFF" />
+    <Realm RealmName="Thrall" Highlight="0" SendTo="Thrallbug" Area="US" ConnectedRealmId="3678" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Tichondrius" Highlight="0" SendTo="Tichibabe" Area="US" ConnectedRealmId="11" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#FD7800" ForeColor="#FFFFFF" />
+    <Realm RealmName="Twisting Nether" Highlight="0" SendTo="Twistish" Area="US" ConnectedRealmId="163" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Uldum" Highlight="0" SendTo="Uldiddle" Area="US" ConnectedRealmId="84" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#990000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Vashj" Highlight="0" SendTo="Vashoak" Area="US" ConnectedRealmId="127" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#434343" ForeColor="#FFFFFF" />
+    <Realm RealmName="Warsong" Highlight="0" SendTo="Warcry" Area="US" ConnectedRealmId="71" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#6AA84F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Whisperwind" Highlight="0" SendTo="Whispitt" Area="US" ConnectedRealmId="55" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#A64D79" ForeColor="#FFFFFF" />
+    <Realm RealmName="Wildhammer" Highlight="0" SendTo="Wildhick" Area="US" ConnectedRealmId="53" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Wyrmrest Accord" Highlight="0" SendTo="Wyrmburn" Area="US" ConnectedRealmId="1171" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#C43F1D" ForeColor="#FFFFFF" />
+    <Realm RealmName="Ysera" Highlight="0" SendTo="Yseree" Area="US" ConnectedRealmId="63" Team="Blue" Account="WoW5" Active="true" Flagged="false" BackColor="#3C78D8" ForeColor="#FFFFFF" />
+    <Realm RealmName="Zul'jin" Highlight="0" SendTo="Zuluss" Area="US" ConnectedRealmId="61" Team="Blue" Account="WoW5" Active="true" Flagged="true" BackColor="#DBA40A" ForeColor="#FFFFFF" />
+    <Realm RealmName="Arthas" Highlight="0" SendTo="Arthasix" Area="US" ConnectedRealmId="69" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Arygos" Highlight="0" SendTo="Aryguy" Area="US" ConnectedRealmId="99" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Azralon" Highlight="0" SendTo="Azro" Area="BR" ConnectedRealmId="3209" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Barthilas" Highlight="0" SendTo="Barthery" Area="OC" ConnectedRealmId="3723" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Bladefist" Highlight="0" SendTo="Bladegrey" Area="US" ConnectedRealmId="1147" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#DBA40A" ForeColor="#FFFFFF" />
+    <Realm RealmName="Bleeding Hollow" Highlight="0" SendTo="Bleeditt" Area="US" ConnectedRealmId="73" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#990000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Caelestrasz" Highlight="0" SendTo="Caellain" Area="OC" ConnectedRealmId="3721" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Coilfang" Highlight="0" SendTo="Coilitt" Area="US" ConnectedRealmId="157" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Darkspear" Highlight="0" SendTo="Darkbark" Area="US" ConnectedRealmId="120" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Darrowmere" Highlight="0" SendTo="Darrowby" Area="US" ConnectedRealmId="113" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#434343" ForeColor="#FFFFFF" />
+    <Realm RealmName="Doomhammer" Highlight="0" SendTo="Doomshroom" Area="US" ConnectedRealmId="1190" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#C43F1D" ForeColor="#FFFFFF" />
+    <Realm RealmName="Draenor" Highlight="0" SendTo="Draebay" Area="US" ConnectedRealmId="115" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Drakkari" Highlight="0" SendTo="Drakkhack" Area="LA" ConnectedRealmId="1425" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Earthen Ring" Highlight="0" SendTo="Earthday" Area="US" ConnectedRealmId="100" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Executus" Highlight="0" SendTo="Exetiggle" Area="US" ConnectedRealmId="155" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Feathermoon" Highlight="0" SendTo="Featherdusta" Area="US" ConnectedRealmId="118" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#3C78D8" ForeColor="#FFFFFF" />
+    <Realm RealmName="Gallywix" Highlight="0" SendTo="Gallybally" Area="BR" ConnectedRealmId="3234" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Garithos" Highlight="0" SendTo="Garylineker" Area="US" ConnectedRealmId="1138" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Ghostlands" Highlight="0" SendTo="Ghostums" Area="US" ConnectedRealmId="1175" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#434343" ForeColor="#FFFFFF" />
+    <Realm RealmName="Goldrinn" Highlight="0" SendTo="Goldrush" Area="BR" ConnectedRealmId="3207" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Gundrak" Highlight="0" SendTo="Gunnerby" Area="OC" ConnectedRealmId="3725" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Hakkar" Highlight="0" SendTo="Hackleby" Area="US" ConnectedRealmId="1136" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#6AA84F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Kel'Thuzad" Highlight="0" SendTo="Kelduggy" Area="US" ConnectedRealmId="3693" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#990000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Khaz'goroth" Highlight="0" SendTo="Khazbazz" Area="OC" ConnectedRealmId="3726" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Mal'Ganis" Highlight="0" SendTo="Malgarden" Area="US" ConnectedRealmId="3684" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#FD7800" ForeColor="#FFFFFF" />
+    <Realm RealmName="Nazjatar" Highlight="0" SendTo="Nazzmal" Area="US" ConnectedRealmId="77" Team="Green" Account="WoW6" Active="true" Flagged="true" BackColor="#1F1F1F" ForeColor="#FFFFFF" />
+    <Realm RealmName="Nemesis" Highlight="0" SendTo="Nemesickle" Area="BR" ConnectedRealmId="3208" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Nordrassil" Highlight="0" SendTo="Nordical" Area="US" ConnectedRealmId="121" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#A64D79" ForeColor="#FFFFFF" />
+    <Realm RealmName="Onyxia" Highlight="0" SendTo="Onyxlonny" Area="US" ConnectedRealmId="104" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#990000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Perenolde" Highlight="0" SendTo="Peryberry" Area="US" ConnectedRealmId="1168" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#674EA6" ForeColor="#FFFFFF" />
+    <Realm RealmName="Quel'Thalas" Highlight="0" SendTo="Quellbelle" Area="LA" ConnectedRealmId="1428" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Ragnaros" Highlight="0" SendTo="Ragmerch" Area="LA" ConnectedRealmId="1427" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Ravencrest" Highlight="0" SendTo="Ravenkill" Area="US" ConnectedRealmId="1072" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#3C78D8" ForeColor="#FFFFFF" />
+    <Realm RealmName="Rexxar" Highlight="0" SendTo="Rexxdex" Area="US" ConnectedRealmId="1151" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Runetotem" Highlight="0" SendTo="Runetide" Area="US" ConnectedRealmId="151" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Sentinels" Highlight="0" SendTo="Sentenz" Area="US" ConnectedRealmId="1071" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#990000" ForeColor="#FFFFFF" />
+    <Realm RealmName="Shandris" Highlight="0" SendTo="Shandiller" Area="US" ConnectedRealmId="117" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Stormreaver" Highlight="0" SendTo="Stormreaker" Area="US" ConnectedRealmId="58" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Turalyon" Highlight="0" SendTo="Turobee" Area="US" ConnectedRealmId="3685" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Winterhoof" Highlight="0" SendTo="Winterhoot" Area="US" ConnectedRealmId="4" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#151515" ForeColor="#FFFFFF" />
+    <Realm RealmName="Ysondre" Highlight="0" SendTo="Ysondie" Area="US" ConnectedRealmId="78" Team="Green" Account="WoW6" Active="true" Flagged="false" BackColor="#660000" ForeColor="#FFFFFF" />
+  </Realms>
+  <AuctionLists>
+    <AuctionList Name="Draconic Comb" MaxListGold="2001">
+      <AuctionListItems>
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Bands" Id="211571" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Cloak" Id="211572" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Gloves" Id="211573" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Hood" Id="211574" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Leggings" Id="211575" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Sash" Id="211576" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Shoulderpads" Id="211577" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Treads" Id="211578" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Wildercloth Tunic" Id="211579" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Helm" Id="211580" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Breastplate" Id="211581" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Greaves" Id="211582" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Pauldrons" Id="211583" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Gauntlets" Id="211584" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Sabatons" Id="211585" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Armguards" Id="211586" MaxGold="0" />
+        <AuctionListItem Name="Plans: Draconic Combatant's Draconium Waistguard" Id="211587" MaxGold="0" />
+        <AuctionListItem Name="Design: Draconic Combatant's Jeweled Amulet" Id="211588" MaxGold="0" />
+        <AuctionListItem Name="Design: Draconic Combatant's Jeweled Signet" Id="211589" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Mask" Id="211590" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Chestpiece" Id="211591" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Trousers" Id="211592" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Shoulderpads" Id="211593" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Boots" Id="211594" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Gloves" Id="211595" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Wristwraps" Id="211596" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Resilient Belt" Id="211597" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Cowl" Id="211598" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Chainmail" Id="211599" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Leggings" Id="211600" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Epaulettes" Id="211601" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Treads" Id="211602" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Gauntlets" Id="211603" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Cuffs" Id="211604" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Draconic Combatant's Adamant Girdle" Id="211605" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Draconic Combatant's Cloth Goggles" Id="211616" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Draconic Combatant's Leather Goggles" Id="211617" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Draconic Combatant's Mail Goggles" Id="211618" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Draconic Combatant's Plate Goggles" Id="211619" MaxGold="0" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="Day and Visage" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Daydreamer's Glimmering Ring" Id="208442" MaxGold="1000000" />
+        <AuctionListItem Name="Visage of the Devouring Flame" Id="208420" MaxGold="1000000" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="New BOEs" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Mask of the Unbidden Grim" Id="208426" MaxGold="1000000" />
+        <AuctionListItem Name="Mantle of Slumbering Sands" Id="208428" MaxGold="1000000" />
+        <AuctionListItem Name="Whispering Fanged Cord" Id="208430" MaxGold="1000000" />
+        <AuctionListItem Name="Daydreamer's Glimmering Ring" Id="208442" MaxGold="1000000" />
+        <AuctionListItem Name="Lost Scholar's Temporal Shoulderdials" Id="208431" MaxGold="1000000" />
+        <AuctionListItem Name="Insurgent Flame Warboots" Id="208427" MaxGold="1000000" />
+        <AuctionListItem Name="Visage of the Devouring Flame" Id="208420" MaxGold="1000000" />
+        <AuctionListItem Name="Vengeful Bladebeak Girdle" Id="208432" MaxGold="1000000" />
+        <AuctionListItem Name="Sentinel's Gilded Poulaines" Id="208434" MaxGold="1000000" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="New Patterns" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Pattern: Verdant Conduit" Id="210169" MaxGold="400000" />
+        <AuctionListItem Name="Design: Dreamtender's Charm" Id="210170" MaxGold="70000" />
+        <AuctionListItem Name="Formula: Enchant Weapon - Dreaming Devotion" Id="210175" MaxGold="250000" />
+        <AuctionListItem Name="Plans: Flourishing Dream Helm" Id="210644" MaxGold="350000" />
+        <AuctionListItem Name="Pattern: Verdant Tether" Id="210670" MaxGold="400000" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="Power List" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Design: Elemental Lariat" Id="194641" MaxGold="50000" />
+        <AuctionListItem Name="Design: Rhinestone Sunglasses" Id="194671" MaxGold="50000" />
+        <AuctionListItem Name="Design: Choker of Shielding" Id="194642" MaxGold="0" />
+        <AuctionListItem Name="Design: Ring-Bound Hourglass" Id="194640" MaxGold="50000" />
+        <AuctionListItem Name="Elemental Codex of Ultimate Power" Id="201740" MaxGold="50000" />
+        <AuctionListItem Name="Formula: Illusion: Primal Air" Id="200911" MaxGold="5000" />
+        <AuctionListItem Name="Formula: Illusion: Primal Earth" Id="200912" MaxGold="5000" />
+        <AuctionListItem Name="Formula: Illusion: Primal Fire" Id="200913" MaxGold="5000" />
+        <AuctionListItem Name="Formula: Illusion: Primal Frost" Id="200914" MaxGold="5000" />
+        <AuctionListItem Name="Formula: Illusion: Primal Mastery" Id="200916" MaxGold="5000" />
+        <AuctionListItem Name="Pattern: Allied Wristguards of Time Dilation" Id="194259" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Amice of the Blue" Id="194255" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Blue Dragon Soles" Id="194260" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Bronzed Grip Wrappings" Id="194266" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Hood of Surging Time" Id="194256" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Old Spirit's Wristwraps" Id="193873" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Scale Rein Grips" Id="193881" MaxGold="0" />
+        <AuctionListItem Name="Pattern: String of Spiritual Knick-Knacks" Id="193872" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Temporal Spellthread" Id="194262" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Venom-Steeped Stompers" Id="193883" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Wind Spirit's Lasso" Id="193880" MaxGold="0" />
+        <AuctionListItem Name="Plans: Allied Chestplate of Generosity" Id="194489" MaxGold="0" />
+        <AuctionListItem Name="Plans: Allied Wristguard of Companionship" Id="194490" MaxGold="0" />
+        <AuctionListItem Name="Plans: Alvin the Anvil" Id="194508" MaxGold="50000" />
+        <AuctionListItem Name="Plans: Black Dragon Touched Hammer" Id="194503" MaxGold="0" />
+        <AuctionListItem Name="Plans: Frostfire Legguards of Preparation" Id="194491" MaxGold="0" />
+        <AuctionListItem Name="Plans: Unstable Frostfire Belt" Id="194492" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Ol' Smoky" Id="199227" MaxGold="0" />
+        <AuctionListItem Name="Tome of Polymorph: Duck" Id="200205" MaxGold="0" />
+        <AuctionListItem Name="Environmental Emulator" Id="198206" MaxGold="0" />
+        <AuctionListItem Name="Centralized Precipitation Emitter" Id="198264" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Acidic Hailstone Treads" Id="193882" MaxGold="0" />
+        <AuctionListItem Name="Magic Rooster" Id="49290" MaxGold="99999999" />
+        <AuctionListItem Name="Reins of the Spectral Tiger" Id="33224" MaxGold="99999999" />
+        <AuctionListItem Name="Reins of the Swift Spectral Tiger" Id="49284" MaxGold="99999999" />
+        <AuctionListItem Name="Plans: Fel Hardened Maul" Id="23634" MaxGold="10000" />
+        <AuctionListItem Name="White Riding Camel" Id="72575" MaxGold="1000000" />
+        <AuctionListItem Name="Feldrake" Id="79771" MaxGold="1000000" />
+        <AuctionListItem Name="X-51 Nether-Rocket" Id="49285" MaxGold="1000000" />
+        <AuctionListItem Name="X-51 Nether-Rocket X-TREME" Id="49286" MaxGold="1000000" />
+        <AuctionListItem Name="Big Battle Bear" Id="49282" MaxGold="1000000" />
+        <AuctionListItem Name="Blazing Hippogryph" Id="54069" MaxGold="1000000" />
+        <AuctionListItem Name="Wooly White Rhino" Id="54068" MaxGold="1000000" />
+        <AuctionListItem Name="Mottled Drake" Id="68008" MaxGold="1000000" />
+        <AuctionListItem Name="Savage Raptor" Id="69228" MaxGold="1000000" />
+        <AuctionListItem Name="Amani Dragonhawk" Id="68825" MaxGold="1000000" />
+        <AuctionListItem Name="Swift Shorestrider" Id="71718" MaxGold="1000000" />
+        <AuctionListItem Name="Corrupted Hippogryph" Id="72582" MaxGold="1000000" />
+        <AuctionListItem Name="Ghastly Charger's Skull" Id="93671" MaxGold="1000000" />
+        <AuctionListItem Name="Vial of the Sands" Id="65891" MaxGold="15000" />
+        <AuctionListItem Name="Goldenmane's Reins" Id="163573" MaxGold="15000" />
+        <AuctionListItem Name="Great Sea Ray" Id="163131" MaxGold="35000" />
+        <AuctionListItem Name="Turbo-Charged Flying Machine" Id="34061" MaxGold="5000" />
+        <AuctionListItem Name="Reins of the Thundering Ruby Cloud Serpent" Id="90655" MaxGold="5000" />
+        <AuctionListItem Name="Chewed-On Reins of the Terrified Pack Mule" Id="163574" MaxGold="50000" />
+        <AuctionListItem Name="Captured Dune Scavenger" Id="163576" MaxGold="50000" />
+        <AuctionListItem Name="Sky Golem" Id="95416" MaxGold="5000" />
+        <AuctionListItem Name="Steelbound Harness" Id="137686" MaxGold="10000" />
+        <AuctionListItem Name="Reins of the Crimson Deathcharger" Id="52200" MaxGold="100000" />
+        <AuctionListItem Name="Reins of a Tamed Bloodfeaster" Id="163575" MaxGold="0" />
+        <AuctionListItem Name="Xiwyllag ATV" Id="153594" MaxGold="2000" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="Realm Transfer List" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Design: Rhinestone Sunglasses" Id="194671" MaxGold="0" />
+        <AuctionListItem Name="Design: Choker of Shielding" Id="194642" MaxGold="0" />
+        <AuctionListItem Name="Design: Elemental Lariat" Id="194641" MaxGold="0" />
+        <AuctionListItem Name="Design: Ring-Bound Hourglass" Id="194640" MaxGold="0" />
+        <AuctionListItem Name="Elemental Codex of Ultimate Power" Id="201740" MaxGold="0" />
+        <AuctionListItem Name="Formula: Illusion: Primal Air" Id="200911" MaxGold="0" />
+        <AuctionListItem Name="Formula: Illusion: Primal Earth" Id="200912" MaxGold="0" />
+        <AuctionListItem Name="Formula: Illusion: Primal Fire" Id="200913" MaxGold="0" />
+        <AuctionListItem Name="Formula: Illusion: Primal Frost" Id="200914" MaxGold="0" />
+        <AuctionListItem Name="Formula: Illusion: Primal Mastery" Id="200916" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Allied Wristguards of Time Dilation" Id="194259" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Amice of the Blue" Id="194255" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Blue Dragon Soles" Id="194260" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Bronzed Grip Wrappings" Id="194266" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Hood of Surging Time" Id="194256" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Infurious Wildercloth Bolt" Id="194269" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Old Spirit's Wristwraps" Id="193873" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Scale Rein Grips" Id="193881" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Slimy Expulsion Boots" Id="193868" MaxGold="0" />
+        <AuctionListItem Name="Pattern: String of Spiritual Knick-Knacks" Id="193872" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Temporal Spellthread" Id="194262" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Toxic Thorn Footwraps" Id="193869" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Venom-Steeped Stompers" Id="193883" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Wind Spirit's Lasso" Id="193880" MaxGold="0" />
+        <AuctionListItem Name="Plans: Allied Chestplate of Generosity" Id="194489" MaxGold="0" />
+        <AuctionListItem Name="Plans: Allied Wristguard of Companionship" Id="194490" MaxGold="0" />
+        <AuctionListItem Name="Plans: Alvin the Anvil" Id="194508" MaxGold="0" />
+        <AuctionListItem Name="Plans: Black Dragon Touched Hammer" Id="194503" MaxGold="0" />
+        <AuctionListItem Name="Plans: Frostfire Legguards of Preparation" Id="194491" MaxGold="0" />
+        <AuctionListItem Name="Plans: Infurious Alloy" Id="200102" MaxGold="0" />
+        <AuctionListItem Name="Plans: Prototype Regal Barding Framework" Id="198714" MaxGold="0" />
+        <AuctionListItem Name="Plans: Unstable Frostfire Belt" Id="194492" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Filet of Fangs" Id="198114" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Hoard of Draconic Delicacies" Id="198132" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Potion Absorption Inhibitor" Id="191597" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Salt-Baked Fishcake" Id="198116" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Seamoth Surprise" Id="198115" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Timely Demise" Id="198113" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Khaz'gorite Fisherfriend" Id="199234" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Ol' Smoky" Id="199227" MaxGold="0" />
+        <AuctionListItem Name="Schematic: Tinker: Breath of Neltharion" Id="199229" MaxGold="0" />
+        <AuctionListItem Name="Tome of Polymorph: Duck" Id="200205" MaxGold="0" />
+        <AuctionListItem Name="Azureweave Expedition Pack" Id="194018" MaxGold="0" />
+        <AuctionListItem Name="Environmental Emulator" Id="198206" MaxGold="0" />
+        <AuctionListItem Name="Centralized Precipitation Emitter" Id="198264" MaxGold="0" />
+        <AuctionListItem Name="Khadgar's Disenchanting Rod" Id="200469" MaxGold="0" />
+        <AuctionListItem Name="Recipe: Churnbelly Tea" Id="198109" MaxGold="0" />
+        <AuctionListItem Name="Pattern: Acidic Hailstone Treads" Id="193882" MaxGold="0" />
+        <AuctionListItem Name="Goldenmane's Reins" Id="163573" MaxGold="0" />
+        <AuctionListItem Name="Reins of Poseidus" Id="67151" MaxGold="0" />
+        <AuctionListItem Name="Vial of the Sands" Id="65891" MaxGold="0" />
+        <AuctionListItem Name="Reins of a Tamed Bloodfeaster" Id="163575" MaxGold="0" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="Lariat" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Design: Elemental Lariat" Id="194641" MaxGold="0" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="Expensive" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="Design: Elemental Lariat" Id="194641" MaxGold="0" />
+        <AuctionListItem Name="Design: Ring-Bound Hourglass" Id="194640" MaxGold="0" />
+        <AuctionListItem Name="Pattern: High Society Top Hat" Id="67541" MaxGold="0" />
+      </AuctionListItems>
+    </AuctionList>
+    <AuctionList Name="Top Hat" MaxListGold="0">
+      <AuctionListItems>
+        <AuctionListItem Name="High Society Top Hat" Id="54451" MaxGold="0" />
+        <AuctionListItem Name="Pattern: High Society Top Hat" Id="67541" MaxGold="0" />
+      </AuctionListItems>
+    </AuctionList>
+  </AuctionLists>
+  <SearchProfiles>
+    <SearchProfile ProfileName="Big Bucks" QuickSearch="0" Highlight="0" ShortName="Big" IconIndex="5" SearchPercent="1" MaxG="2000" WorthAtLeast="70000" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="false" IncludeItems="true" IncludePets="true" ItemFrequency="0" ItemQuality="0111100" ItemType="11111111111111" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Small Items" QuickSearch="1" Highlight="0" ShortName="Small" IconIndex="3" SearchPercent="1" MaxG="100" WorthAtLeast="6000" MinSellRate="-1" OnlySearchNewData="false" OnlyLatestXpac="false" IncludeItems="true" IncludePets="true" ItemFrequency="0" ItemQuality="0111100" ItemType="11111111111111" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Big Bucks Only This Xpac" QuickSearch="0" Highlight="0" ShortName="Big X" IconIndex="5" SearchPercent="1" MaxG="5001" WorthAtLeast="70000" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="true" ItemFrequency="0" ItemQuality="0111100" ItemType="11111111111111" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Big Patterns" QuickSearch="1" Highlight="0" ShortName="Big P" IconIndex="7" SearchPercent="1" MaxG="2000" WorthAtLeast="70000" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="false" IncludeItems="true" IncludePets="true" ItemFrequency="0" ItemQuality="0111100" ItemType="00000000010000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Lariat" QuickSearch="0" Highlight="1" ShortName="Lariat" IconIndex="6" SearchPercent="1" MaxG="200" WorthAtLeast="10000" MinSellRate="-1" OnlySearchNewData="false" OnlyLatestXpac="false" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0011100" ItemType="11111111111111" Bonuses="00" SearchType="1" SearchString="Lariat" AuctionList="" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Black Tuxedo Pants" QuickSearch="0" Highlight="2" ShortName="Tuxedo" IconIndex="1" SearchPercent="1" MaxG="200" WorthAtLeast="10000" MinSellRate="-1" OnlySearchNewData="false" OnlyLatestXpac="false" IncludeItems="true" IncludePets="false" ItemFrequency="1" ItemQuality="0011100" ItemType="11111111111111" Bonuses="00" SearchType="1" SearchString="Black Tuxedo Pants" AuctionList="" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Speed 424" QuickSearch="0" Highlight="0" ShortName="s424" IconIndex="0" SearchPercent="1" MaxG="6500" WorthAtLeast="20" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="false" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0011100" ItemType="11000000000000" Bonuses="10" SearchType="0" SearchString="" AuctionList="" MinItemLevel="424" MaxItemLevel="424" Socket="false" TitleColor="#753211" PanelColor="#4F220C" />
+    <SearchProfile ProfileName="Speed 424 with socket" QuickSearch="0" Highlight="0" ShortName="sock424" IconIndex="8" SearchPercent="1" MaxG="20010" WorthAtLeast="20" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="false" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0011100" ItemType="11000000000000" Bonuses="10" SearchType="0" SearchString="" AuctionList="" MinItemLevel="424" MaxItemLevel="424" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="New Patterns" QuickSearch="0" Highlight="0" ShortName="New P" IconIndex="7" SearchPercent="1" MaxG="400000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="1" ItemQuality="0011100" ItemType="00000000010000" Bonuses="00" SearchType="3" SearchString="" AuctionList="New Patterns" MinItemLevel="0" MaxItemLevel="10000" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Ochre Field Signet Speed + Socket" QuickSearch="0" Highlight="0" ShortName="ochreSS" IconIndex="9" SearchPercent="1" MaxG="20010" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="false" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0011100" ItemType="11000000000000" Bonuses="10" SearchType="1" SearchString="Ochre Field Signet" AuctionList="" MinItemLevel="424" MaxItemLevel="424" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Ring of Season's Sunset Speed + Socket" QuickSearch="0" Highlight="0" ShortName="seasonSS" IconIndex="9" SearchPercent="1" MaxG="20010" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="false" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0011100" ItemType="11000000000000" Bonuses="10" SearchType="1" SearchString="Ring of Season's Sunset" AuctionList="" MinItemLevel="424" MaxItemLevel="424" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Epix 496 + socket" QuickSearch="0" Highlight="0" ShortName="E496s" IconIndex="8" SearchPercent="1" MaxG="5000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="496" MaxItemLevel="496" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Epix 496" QuickSearch="0" Highlight="0" ShortName="E496" IconIndex="10" SearchPercent="1" MaxG="5000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="496" MaxItemLevel="496" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Daydreamer Ring 496 + socket" QuickSearch="0" Highlight="0" ShortName="D496s" IconIndex="8" SearchPercent="1" MaxG="800000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="1" SearchString="Daydreamer's Glimmering Ring" AuctionList="" MinItemLevel="496" MaxItemLevel="496" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Daydreamer Ring 496" QuickSearch="0" Highlight="0" ShortName="D496" IconIndex="9" SearchPercent="1" MaxG="800000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="1" SearchString="Daydreamer's Glimmering Ring" AuctionList="" MinItemLevel="496" MaxItemLevel="496" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Epix 509 + socket" QuickSearch="2" Highlight="0" ShortName="E509s" IconIndex="8" SearchPercent="1" MaxG="5000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="509" MaxItemLevel="509" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Epix 509" QuickSearch="2" Highlight="0" ShortName="E509" IconIndex="10" SearchPercent="1" MaxG="5000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="509" MaxItemLevel="509" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Daydreamer Ring 509 + socket" QuickSearch="2" Highlight="0" ShortName="D509s" IconIndex="8" SearchPercent="1" MaxG="8000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="1" SearchString="Daydreamer's Glimmering Ring" AuctionList="" MinItemLevel="509" MaxItemLevel="509" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Daydreamer Ring 509" QuickSearch="2" Highlight="0" ShortName="D509" IconIndex="9" SearchPercent="1" MaxG="8000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="1" SearchString="Daydreamer's Glimmering Ring" AuctionList="" MinItemLevel="509" MaxItemLevel="509" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Epix 522 + socket" QuickSearch="3" Highlight="0" ShortName="E522s" IconIndex="8" SearchPercent="1" MaxG="5000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="522" MaxItemLevel="522" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Epix 522" QuickSearch="3" Highlight="0" ShortName="E522" IconIndex="10" SearchPercent="1" MaxG="5000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="0" SearchString="" AuctionList="" MinItemLevel="522" MaxItemLevel="522" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Daydreamer Ring 522 + socket" QuickSearch="3" Highlight="0" ShortName="D522s" IconIndex="8" SearchPercent="1" MaxG="8000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="1" SearchString="Daydreamer's Glimmering Ring" AuctionList="" MinItemLevel="522" MaxItemLevel="522" Socket="true" TitleColor="#333333" PanelColor="#151515" />
+    <SearchProfile ProfileName="Daydreamer Ring 522" QuickSearch="3" Highlight="0" ShortName="D522" IconIndex="9" SearchPercent="1" MaxG="8000000" WorthAtLeast="200" MinSellRate="-1" OnlySearchNewData="true" OnlyLatestXpac="true" IncludeItems="true" IncludePets="false" ItemFrequency="2" ItemQuality="0000100" ItemType="11000000000000" Bonuses="00" SearchType="1" SearchString="Daydreamer's Glimmering Ring" AuctionList="" MinItemLevel="522" MaxItemLevel="522" Socket="false" TitleColor="#333333" PanelColor="#151515" />
+  </SearchProfiles>
+  <CustomFSearch1>Draconic Comb</CustomFSearch1>
+  <CustomFSearch2>Mantle of Slumbering Sands</CustomFSearch2>
+  <CustomFSearch3>Whispering Fanged Cord</CustomFSearch3>
+  <CustomFSearch4>Daydreamer's Glimmering Ring</CustomFSearch4>
+  <CustomFSearch5>Lost Scholar's Temporal Shoulderdials</CustomFSearch5>
+  <CustomFSearch6>Insurgent Flame Warboots</CustomFSearch6>
+  <CustomFSearch7>Visage of the Devouring Flame</CustomFSearch7>
+  <CustomFSearch8>Vengeful Bladebeak Girdle</CustomFSearch8>
+  <CustomFSearch9>Sentinel's Gilded Poulaines</CustomFSearch9>
+  <CustomFSearch10>Verdant</CustomFSearch10>
+  <CustomFSearch11 />
+  <CustomFSearch12 />
+  <Highlight1>#004400</Highlight1>
+  <Highlight2>#440000</Highlight2>
+  <Highlight3>#000044</Highlight3>
+  <Highlight4>#FFFFFF</Highlight4>
+  <Highlight5>#000000</Highlight5>
+</Config>

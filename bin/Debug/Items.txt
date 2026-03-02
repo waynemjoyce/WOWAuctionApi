@@ -1,0 +1,52 @@
+Design: "Rhinestone" Sunglasses
+Design: Choker of Shielding
+Design: Elemental Lariat
+Design: Ring-Bound Hourglass
+Elemental Codex of Ultimate Power
+Formula: Illusion: Primal Air
+Formula: Illusion: Primal Earth
+Formula: Illusion: Primal Fire
+Formula: Illusion: Primal Frost
+Formula: Illusion: Primal Mastery
+Pattern: Allied Wristguards of Time Dilation
+Pattern: Amice of the Blue
+Pattern: Blue Dragon Soles
+Pattern: Bronzed Grip Wrappings
+Pattern: Hood of Surging Time
+Pattern: Infurious Wildercloth Bolt
+Pattern: Old Spirit's Wristwraps
+Pattern: Scale Rein Grips
+Pattern: Slimy Expulsion Boots
+Pattern: String of Spiritual Knick-Knacks
+Pattern: Temporal Spellthread
+Pattern: Toxic Thorn Footwraps
+Pattern: Venom-Steeped Stompers
+Pattern: Wind Spirit's Lasso
+Plans: Allied Chestplate of Generosity
+Plans: Allied Wristguard of Companionship
+Plans: Alvin the Anvil
+Plans: Black Dragon Touched Hammer
+Plans: Frostfire Legguards of Preparation
+Plans: Infurious Alloy
+Plans: Prototype Regal Barding Framework
+Plans: Unstable Frostfire Belt
+Recipe: Filet of Fangs
+Recipe: Hoard of Draconic Delicacies
+Recipe: Potion Absorption Inhibitor
+Recipe: Salt-Baked Fishcake
+Recipe: Seamoth Surprise
+Recipe: Timely Demise
+Schematic: Khaz'gorite Fisherfriend
+Schematic: Ol' Smoky
+Schematic: Tinker: Breath of Neltharion
+Tome of Polymorph: Duck
+Azureweave Expedition Pack
+Environmental Emulator
+Centralized Precipitation Emitter
+Khadgar's Disenchanting Rod
+Recipe: Churnbelly Tea
+Pattern: Acidic Hailstone Treads
+Goldenmane's Reins
+Reins of Poseidus
+Vial of the Sands
+Reins of a Tamed Bloodfeaster

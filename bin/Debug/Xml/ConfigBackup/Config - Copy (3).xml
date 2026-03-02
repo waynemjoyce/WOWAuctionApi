@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClientID>364aef7289e24a3b838c778baf56133c</ClientID>
+  <ClientSecret>3OlsVa5pklqoI2VvHYc2kpfagY8itsAg</ClientSecret>
+  <TSMKey>A7iR0Pu0leO4Fl_lBjqZc1rl0GMt8ms8</TSMKey>
+  <Defaults>
+    <SearchPercentage>5</SearchPercentage>
+    <SearchMaxG>200</SearchMaxG>
+    <WorthAtLeast>20000</WorthAtLeast>
+  </Defaults>
+  <Teams>
+    <Team Name="Green" TeamColor="#407614" Active="true" />
+    <!--<Team Name="Red" TeamColor="#990000" Active="true" />-->
+    <Team Name="Blue" TeamColor="#2756CF" Active="true" />
+    <!--<Team Name="Orange" TeamColor="#FD7800" Active="true" />-->
+  </Teams>
+  <Realms>
+
+    <!-- Green team - WoW5 -->
+    <Realm RealmName="Area 52" ConnectedRealmId="3676" Team="Green" Account="WoW5" BackColor="#45818E" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Bleeding Hollow" ConnectedRealmId="73" Team="Green" Account="WoW5" BackColor="#990000" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Boulderfist" ConnectedRealmId="1185" Team="Green" Account="WoW5" BackColor="#45818E" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Cenarion Circle" ConnectedRealmId="125" Team="Green" Account="WoW5" BackColor="#990000" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Dalaran" ConnectedRealmId="3683" Team="Green" Account="WoW5" BackColor="#FD7800" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Elune" ConnectedRealmId="67" Team="Green" Account="WoW5" BackColor="#DBA40A" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Emerald Dream" ConnectedRealmId="162" Team="Green" Account="WoW5" BackColor="#6AA84F" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Hyjal" ConnectedRealmId="3661" Team="Green" Account="WoW5" BackColor="#660000" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Kil'Jaeden" ConnectedRealmId="9" Team="Green" Account="WoW5" BackColor="#FD7800" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Lightbringer" ConnectedRealmId="3694" Team="Green" Account="WoW5" BackColor="#DBA40A" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Tichondrius" ConnectedRealmId="11" Team="Green" Account="WoW5" BackColor="#3C78D8" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Whisperwind" ConnectedRealmId="55" Team="Green" Account="WoW5" BackColor="#3C78D8" ForeColor="#FFFFFF" Active="true" />
+
+    <!-- Blue team - WoW1 -->
+    <Realm RealmName="Alexstrasza" ConnectedRealmId="1070" Team="Blue" Account="WoW1" BackColor="#A64D79" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Alleria" ConnectedRealmId="52" Team="Blue" Account="WoW1" BackColor="#A64D79" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Black Dragonflight" ConnectedRealmId="96" Team="Blue" Account="WoW1" BackColor="#A64D79" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Bloodhoof" ConnectedRealmId="64" Team="Blue" Account="WoW1" BackColor="#45818E" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Dawnbringer" ConnectedRealmId="160" Team="Blue" Account="WoW1" BackColor="#45818E" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Doomhammer" ConnectedRealmId="1190" Team="Blue" Account="WoW1" BackColor="#990000" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Farstriders" ConnectedRealmId="12" Team="Blue" Account="WoW1" BackColor="#660000" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Onyxia" ConnectedRealmId="104" Team="Blue" Account="WoW1" BackColor="#434343" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Shandris" ConnectedRealmId="117" Team="Blue" Account="WoW1" BackColor="#674EA6" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="The Scryers" ConnectedRealmId="75" Team="Blue" Account="WoW1" BackColor="#3C78D8" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Wyrmrest Accord" ConnectedRealmId="1171" Team="Blue" Account="WoW1" BackColor="#674EA6" ForeColor="#FFFFFF" Active="true" />
+    <Realm RealmName="Zul'jin" ConnectedRealmId="61" Team="Blue" Account="WoW1" BackColor="#674EA6" ForeColor="#FFFFFF" Active="true" />
+    
+  </Realms>
+
+  <AuctionLists>
+     <AuctionList Name="Realm Transfer List">
+        <AuctionListItems>
+          <AuctionListItem Name="Design: Rhinestone Sunglasses" Id="194671" />
+          <AuctionListItem Name="Design: Choker of Shielding" Id="194642" />
+          <AuctionListItem Name="Design: Elemental Lariat" Id="194641" />
+          <AuctionListItem Name="Design: Ring-Bound Hourglass" Id="194640" />
+          <AuctionListItem Name="Elemental Codex of Ultimate Power" Id="201740" />
+          <AuctionListItem Name="Formula: Illusion: Primal Air" Id="200911" />
+          <AuctionListItem Name="Formula: Illusion: Primal Earth" Id="200912" />
+          <AuctionListItem Name="Formula: Illusion: Primal Fire" Id="200913" />
+          <AuctionListItem Name="Formula: Illusion: Primal Frost" Id="200914" />
+          <AuctionListItem Name="Formula: Illusion: Primal Mastery" Id="200916" />
+          <AuctionListItem Name="Pattern: Allied Wristguards of Time Dilation" Id="194259" />
+          <AuctionListItem Name="Pattern: Amice of the Blue" Id="194255" />
+          <AuctionListItem Name="Pattern: Blue Dragon Soles" Id="194260" />
+          <AuctionListItem Name="Pattern: Bronzed Grip Wrappings" Id="194266" />
+          <AuctionListItem Name="Pattern: Hood of Surging Time" Id="194256" />
+          <AuctionListItem Name="Pattern: Infurious Wildercloth Bolt" Id="194269" />
+          <AuctionListItem Name="Pattern: Old Spirit's Wristwraps" Id="193873" />
+          <AuctionListItem Name="Pattern: Scale Rein Grips" Id="193881" />
+          <AuctionListItem Name="Pattern: Slimy Expulsion Boots" Id="193868" />
+          <AuctionListItem Name="Pattern: String of Spiritual Knick-Knacks" Id="193872" />
+          <AuctionListItem Name="Pattern: Temporal Spellthread" Id="194262" />
+          <AuctionListItem Name="Pattern: Toxic Thorn Footwraps" Id="193869" />
+          <AuctionListItem Name="Pattern: Venom-Steeped Stompers" Id="193883" />
+          <AuctionListItem Name="Pattern: Wind Spirit's Lasso" Id="193880" />
+          <AuctionListItem Name="Plans: Allied Chestplate of Generosity" Id="194489" />
+          <AuctionListItem Name="Plans: Allied Wristguard of Companionship" Id="194490" />
+          <AuctionListItem Name="Plans: Alvin the Anvil" Id="194508" />
+          <AuctionListItem Name="Plans: Black Dragon Touched Hammer" Id="194503" />
+          <AuctionListItem Name="Plans: Frostfire Legguards of Preparation" Id="194491" />
+          <AuctionListItem Name="Plans: Infurious Alloy" Id="200102" />
+          <AuctionListItem Name="Plans: Prototype Regal Barding Framework" Id="198714" />
+          <AuctionListItem Name="Plans: Unstable Frostfire Belt" Id="194492" />
+          <AuctionListItem Name="Recipe: Filet of Fangs" Id="198114" />
+          <AuctionListItem Name="Recipe: Hoard of Draconic Delicacies" Id="198132" />
+          <AuctionListItem Name="Recipe: Potion Absorption Inhibitor" Id="191597" />
+          <AuctionListItem Name="Recipe: Salt-Baked Fishcake" Id="198116" />
+          <AuctionListItem Name="Recipe: Seamoth Surprise" Id="198115" />
+          <AuctionListItem Name="Recipe: Timely Demise" Id="198113" />
+          <AuctionListItem Name="Schematic: Khaz'gorite Fisherfriend" Id="199234" />
+          <AuctionListItem Name="Schematic: Ol' Smoky" Id="199227" />
+          <AuctionListItem Name="Schematic: Tinker: Breath of Neltharion" Id="199229" />
+          <AuctionListItem Name="Tome of Polymorph: Duck" Id="200205" />
+          <AuctionListItem Name="Azureweave Expedition Pack" Id="194018" />
+          <AuctionListItem Name="Environmental Emulator" Id="198206" />
+          <AuctionListItem Name="Centralized Precipitation Emitter" Id="198264" />
+          <AuctionListItem Name="Khadgar's Disenchanting Rod" Id="200469" />
+          <AuctionListItem Name="Recipe: Churnbelly Tea" Id="198109" />
+          <AuctionListItem Name="Pattern: Acidic Hailstone Treads" Id="193882" />
+          <AuctionListItem Name="Goldenmane's Reins" Id="163573" />
+          <AuctionListItem Name="Reins of Poseidus" Id="67151" />
+          <AuctionListItem Name="Vial of the Sands" Id="65891" />
+          <AuctionListItem Name="Reins of a Tamed Bloodfeaster" Id="163575" />
+
+        </AuctionListItems>
+
+     </AuctionList>
+     <AuctionList Name="List2">
+        <AuctionListItems> 
+          <AuctionListItem Name="Crimson Combatant's Medallion" Id="203375" />
+          <AuctionListItem Name="Emissary's Flamewrought Seal" Id="201992" />
+        </AuctionListItems>
+     </AuctionList>
+  </AuctionLists>
+
+
+</Config>
