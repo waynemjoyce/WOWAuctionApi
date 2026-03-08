@@ -21,6 +21,7 @@ using RoboSharp;
 using System.Diagnostics;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using RoboSharp.Results;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WOWApi
 {
@@ -81,6 +82,9 @@ namespace WOWApi
         public Dictionary<long, long> auctionListFull = new Dictionary<long, long>();
         public long auctionListMaxGold = 0;
 
+        public Dictionary<string, int> searchHits1 = new Dictionary<string, int>();
+        public List<KeyValuePair<int, string>> searchHits2 = new List<KeyValuePair<int, string>>();
+
         public bool livePoll = false;
         //-------------------------------
 
@@ -99,7 +103,6 @@ namespace WOWApi
 
             foreach (TsmItem item in AllRegionItems)
             {
-
                 if (item.itemId != null)
                 {
                     itemId = long.Parse(item.itemId);
@@ -342,11 +345,11 @@ namespace WOWApi
 
         private void WriteRegionData()
         {
-            Cursor.Current = Cursors.WaitCursor;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
             BackupRegionData();
             string tsmAccessToken = API_TSM.GetAccessToken(apiConfig.TSMKey);
             API_TSM.WriteRegionTsmItems(tsmAccessToken);
-            Cursor.Current = Cursors.Default;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
             MessageBox.Show("Region items updated");
         }
 
@@ -444,8 +447,74 @@ namespace WOWApi
                 //LoadAuctionDataLive();
             }
 
+           
         }
 
+        private void SetUpChart(Chart chart1, String title)
+        {
+            chart1.Titles.Add(title);
+            chart1.Titles[0].ForeColor = Color.White;
+            chart1.Titles[0].Font = new System.Drawing.Font("Calibri", 14f, System.Drawing.FontStyle.Bold);
+
+            chart1.Series.Clear();
+            chart1.Legends.Clear();
+
+            Series taSeries = new Series();
+            taSeries.Name = "Series 1";
+            taSeries.IsXValueIndexed = true;
+            taSeries.ChartType = SeriesChartType.Pie;
+            taSeries.IsValueShownAsLabel = true;
+            taSeries.Font = new System.Drawing.Font("Calibri", 12f, System.Drawing.FontStyle.Bold);
+            taSeries.Color = Color.White;
+
+            chart1.Legends.Add("");
+            chart1.Series.Add(taSeries);
+
+            chart1.BackColor = Color.Transparent;
+            chart1.Legends[0].BackColor = Color.Transparent;
+            chart1.Legends[0].ForeColor = Color.White;
+            chart1.ChartAreas[0].BackColor = Color.Transparent;
+            chart1.Legends[0].Font = new System.Drawing.Font("Calibri", 12f, System.Drawing.FontStyle.Bold);
+            chart1.BorderSkin.BackColor = Color.Transparent;
+            chart1.ChartAreas[0].BorderColor = Color.Transparent;
+        }
+
+        private void RenderPieCharts()
+        {
+            //Render Top 5 Total Auctions
+            List<KeyValuePair<int, string>> realmList = new List<KeyValuePair<int, string>>();
+
+            foreach (ListViewItem lvi in lvwRealms.Items)
+            {
+                realmList.Add(new KeyValuePair<int, string>(int.Parse(lvi.SubItems[3].Text), lvi.SubItems[1].Text));
+            }
+            SetUpChart(chartTotalAuctions, "Top 5 Total Auctions");
+            RenderSinglePieChart(realmList, 5, chartTotalAuctions);
+
+
+            //Render Top 10 Search Hit Realms
+            foreach (KeyValuePair<string, int> realmItem in searchHits1)
+            {
+                searchHits2.Add(new KeyValuePair<int, string>(realmItem.Value, realmItem.Key));
+            }
+            SetUpChart(chartTopSearches, "Top 10 Search Hit Realms");
+            RenderSinglePieChart(searchHits2, 10, chartTopSearches);
+        }
+
+        private void RenderSinglePieChart(List<KeyValuePair<int, string>> originalList, int realmCount, Chart chartToRender)
+        {
+            List<KeyValuePair<int, string>> sortedList = originalList.OrderBy(p => p.Key).ToList();
+            sortedList.Reverse();
+
+            int count = 0;
+            foreach (KeyValuePair<int, string> realm in sortedList)
+            {
+                count++;
+                if (count > realmCount) { break; }
+
+                chartToRender.Series[0].Points.AddXY(realm.Value, realm.Key);
+            }
+        }
 
         private void RefreshThreadCount()
         {
@@ -647,7 +716,7 @@ namespace WOWApi
 
         private void BuildPetCache(bool updateOnly)
         {
-            Cursor.Current = Cursors.WaitCursor;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
             BackupPetCache();
 
             string petName;
@@ -722,12 +791,12 @@ namespace WOWApi
             tspCache.Value = tspCache.Maximum;
             Application.DoEvents();
             MessageBox.Show("Finished building pet cache. " + count.ToString() + " region pets scanned, " + addedCount.ToString() + " new pets added.");
-            Cursor.Current = Cursors.Default;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
         }
 
         private void BuildItemCache(bool updateOnly)
         {
-            Cursor.Current = Cursors.WaitCursor;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
             BackupItemCache();
 
             string itemName;
@@ -820,7 +889,7 @@ namespace WOWApi
             tspCache.Value = tspCache.Maximum;
             Application.DoEvents();
             MessageBox.Show("Finished building item cache. " + count.ToString() + " region items scanned, " + addedCount.ToString() + " new items added.");
-            Cursor.Current = Cursors.Default;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
 
         }
 
@@ -857,7 +926,7 @@ namespace WOWApi
                 {
                     this.WindowState = FormWindowState.Normal;
                     this.Location = scr.Bounds.Location;
-                    //this.WindowState = FormWindowState.Maximized;
+                    this.WindowState = FormWindowState.Maximized;
                     Application.DoEvents();
                 }
             }
@@ -977,12 +1046,6 @@ namespace WOWApi
                 case 6: return "ARTIFACT";
             }
         }
-
-        private long SearchID(string stringId)
-        {
-            return long.Parse(stringId.Substring(1));
-        }
-
 
         private void SearchRealm(Realm r, bool special = false)
         {
@@ -1424,10 +1487,17 @@ namespace WOWApi
             DateTime startTime = DateTime.Now;
             SearchInit();
 
+            searchHits1.Clear();
+            searchHits2.Clear();
+
             foreach (Realm r in apiConfig.Realms)
             {
                SearchRealm(r, special);
             }
+
+            chartTopSearches.Visible = true;
+            chartTotalAuctions.Visible = true;
+            RenderPieCharts();
         }
 
         public Team GetTeam(string teamName)
@@ -1465,16 +1535,6 @@ namespace WOWApi
             return (r.Flagged);
         }
 
-        private void SetAreaImage(ListViewItem lvi, string Area)
-        {
-            switch (Area)
-            {
-                case "US": default: lvi.ImageIndex = 0; break;
-                case "OC": lvi.ImageIndex = 1; break;
-                case "BR": lvi.ImageIndex = 2; break;
-                case "LA": lvi.ImageIndex = 3; break;
-            }
-        }
         private void RenderSearchResults(List<SearchResult> searchResults, Realm r)
         {
             r.AuctionsView.SuspendLayout();
@@ -1534,6 +1594,15 @@ namespace WOWApi
                 }
 
                 r.AuctionsView.Items.Add(lvi);
+
+                if (searchHits1.ContainsKey(r.RealmName))
+                {
+                    searchHits1[r.RealmName]++;
+                }
+                else
+                {
+                    searchHits1.Add(r.RealmName, 1);
+                }
             }
             r.AuctionsView.ResumeLayout();
         }

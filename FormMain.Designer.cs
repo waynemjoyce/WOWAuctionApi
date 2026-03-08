@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lvwAuctionsBlue = new System.Windows.Forms.ListView();
             this.colS_RealmName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colS_ItemName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -137,51 +143,19 @@
             this.chkLevel70 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.togItemClass_Container = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Armor = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Tradeskill = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Profession = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Weapon = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Miscellaneous = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Recipe = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Consumable = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Gem = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Quest = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Glyph = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Key = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_ItemEnhancement = new WOWApi.WOWApiToggleButton();
-            this.togItemClass_Reagent = new WOWApi.WOWApiToggleButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.togBonuses_Leech = new WOWApi.WOWApiToggleButton();
-            this.togBonuses_Speed = new WOWApi.WOWApiToggleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.togItemQuality_Poor = new WOWApi.WOWApiToggleButton();
-            this.togItemQuality_Artifact = new WOWApi.WOWApiToggleButton();
-            this.togItemQuality_Common = new WOWApi.WOWApiToggleButton();
-            this.togItemQuality_Epic = new WOWApi.WOWApiToggleButton();
-            this.togItemQuality_Legendary = new WOWApi.WOWApiToggleButton();
-            this.togItemQuality_Rare = new WOWApi.WOWApiToggleButton();
-            this.togItemQuality_Uncommon = new WOWApi.WOWApiToggleButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.togDebug = new WOWApi.WOWApiToggleButton();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblThreshold = new System.Windows.Forms.Label();
-            this.togSpecial = new WOWApi.WOWApiToggleButton();
             this.label26 = new System.Windows.Forms.Label();
             this.lblSpecial = new System.Windows.Forms.Label();
-            this.togSocket = new WOWApi.WOWApiToggleButton();
             this.label25 = new System.Windows.Forms.Label();
-            this.togIncludePets = new WOWApi.WOWApiToggleButton();
             this.label24 = new System.Windows.Forms.Label();
-            this.togIgnoreOnlyNewData = new WOWApi.WOWApiToggleButton();
-            this.togIncludeItems = new WOWApi.WOWApiToggleButton();
             this.label23 = new System.Windows.Forms.Label();
-            this.togOnlyLatestXpac = new WOWApi.WOWApiToggleButton();
-            this.togAtoZ = new WOWApi.WOWApiToggleButton();
-            this.togOnlyNewData = new WOWApi.WOWApiToggleButton();
             this.img24 = new System.Windows.Forms.ImageList(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnBlueWOW = new System.Windows.Forms.Button();
@@ -194,6 +168,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.txtWowProcessId = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.chartTotalAuctions = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTopSearches = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.toolStripMain = new WOWApi.WOWApiToolStrip(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.tsbWriteRegionData = new System.Windows.Forms.ToolStripButton();
@@ -217,7 +194,38 @@
             this.tsAccountDetails = new System.Windows.Forms.ToolStripLabel();
             this.tsbDoBackup = new System.Windows.Forms.ToolStripButton();
             this.tsbTest = new System.Windows.Forms.ToolStripButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.togItemClass_Container = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Armor = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Tradeskill = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Profession = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Weapon = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Miscellaneous = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Recipe = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Consumable = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Gem = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Quest = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Glyph = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Key = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_ItemEnhancement = new WOWApi.WOWApiToggleButton();
+            this.togItemClass_Reagent = new WOWApi.WOWApiToggleButton();
+            this.togBonuses_Leech = new WOWApi.WOWApiToggleButton();
+            this.togBonuses_Speed = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Poor = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Artifact = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Common = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Epic = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Legendary = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Rare = new WOWApi.WOWApiToggleButton();
+            this.togItemQuality_Uncommon = new WOWApi.WOWApiToggleButton();
+            this.togDebug = new WOWApi.WOWApiToggleButton();
+            this.togSpecial = new WOWApi.WOWApiToggleButton();
+            this.togSocket = new WOWApi.WOWApiToggleButton();
+            this.togIncludePets = new WOWApi.WOWApiToggleButton();
+            this.togIgnoreOnlyNewData = new WOWApi.WOWApiToggleButton();
+            this.togIncludeItems = new WOWApi.WOWApiToggleButton();
+            this.togOnlyLatestXpac = new WOWApi.WOWApiToggleButton();
+            this.togAtoZ = new WOWApi.WOWApiToggleButton();
+            this.togOnlyNewData = new WOWApi.WOWApiToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -241,6 +249,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTotalAuctions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTopSearches)).BeginInit();
             this.toolStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -328,7 +338,7 @@
             this.lvwRealms.Location = new System.Drawing.Point(32, 498);
             this.lvwRealms.Margin = new System.Windows.Forms.Padding(6);
             this.lvwRealms.Name = "lvwRealms";
-            this.lvwRealms.Size = new System.Drawing.Size(542, 1556);
+            this.lvwRealms.Size = new System.Drawing.Size(546, 1518);
             this.lvwRealms.TabIndex = 20;
             this.lvwRealms.UseCompatibleStateImageBehavior = false;
             this.lvwRealms.View = System.Windows.Forms.View.Details;
@@ -1364,10 +1374,10 @@
             this.btnGetAuctionData.ForeColor = System.Drawing.Color.Black;
             this.btnGetAuctionData.Image = ((System.Drawing.Image)(resources.GetObject("btnGetAuctionData.Image")));
             this.btnGetAuctionData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGetAuctionData.Location = new System.Drawing.Point(2309, 478);
+            this.btnGetAuctionData.Location = new System.Drawing.Point(1780, 36);
             this.btnGetAuctionData.Margin = new System.Windows.Forms.Padding(6);
             this.btnGetAuctionData.Name = "btnGetAuctionData";
-            this.btnGetAuctionData.Size = new System.Drawing.Size(508, 93);
+            this.btnGetAuctionData.Size = new System.Drawing.Size(180, 44);
             this.btnGetAuctionData.TabIndex = 100;
             this.btnGetAuctionData.Text = " Refresh";
             this.btnGetAuctionData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1499,6 +1509,7 @@
             this.pnlSearchParamsBack.Controls.Add(this.lblCurrentThreads);
             this.pnlSearchParamsBack.Controls.Add(this.pictureBox9);
             this.pnlSearchParamsBack.Controls.Add(this.btnRefreshThreads);
+            this.pnlSearchParamsBack.Controls.Add(this.btnGetAuctionData);
             this.pnlSearchParamsBack.Controls.Add(this.pictureBox7);
             this.pnlSearchParamsBack.Controls.Add(this.btnSearch);
             this.pnlSearchParamsBack.Controls.Add(this.pictureBox1);
@@ -1624,6 +1635,630 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(550, 324);
             this.panel3.TabIndex = 204;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.btnSelectNone_Bonuses);
+            this.panel2.Controls.Add(this.btnSelectAll_Bonuses);
+            this.panel2.Controls.Add(this.lblLeech);
+            this.panel2.Controls.Add(this.lblLeg);
+            this.panel2.Controls.Add(this.togBonuses_Leech);
+            this.panel2.Controls.Add(this.togBonuses_Speed);
+            this.panel2.Location = new System.Drawing.Point(18, 250);
+            this.panel2.Margin = new System.Windows.Forms.Padding(8);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(348, 92);
+            this.panel2.TabIndex = 203;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnSelectNone_ItemQuality);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.btnSelectAll_ItemQuality);
+            this.panel1.Controls.Add(this.togItemQuality_Poor);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.togItemQuality_Artifact);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.togItemQuality_Common);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.togItemQuality_Epic);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.togItemQuality_Legendary);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.togItemQuality_Rare);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.togItemQuality_Uncommon);
+            this.panel1.Location = new System.Drawing.Point(2000, 18);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(274, 324);
+            this.panel1.TabIndex = 202;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(842, 304);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.TabIndex = 201;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Location = new System.Drawing.Point(960, 306);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 29);
+            this.label2.TabIndex = 200;
+            this.label2.Text = "Enable Debug";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(842, 268);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.TabIndex = 198;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(842, 232);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.TabIndex = 197;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(842, 196);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 196;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblThreshold
+            // 
+            this.lblThreshold.AutoSize = true;
+            this.lblThreshold.BackColor = System.Drawing.Color.Transparent;
+            this.lblThreshold.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThreshold.ForeColor = System.Drawing.Color.White;
+            this.lblThreshold.Location = new System.Drawing.Point(458, 304);
+            this.lblThreshold.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblThreshold.Name = "lblThreshold";
+            this.lblThreshold.Size = new System.Drawing.Size(112, 29);
+            this.lblThreshold.TabIndex = 195;
+            this.lblThreshold.Text = "Threshold";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.PowderBlue;
+            this.label26.Location = new System.Drawing.Point(960, 162);
+            this.label26.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 29);
+            this.label26.TabIndex = 193;
+            this.label26.Text = "Socket";
+            // 
+            // lblSpecial
+            // 
+            this.lblSpecial.AutoSize = true;
+            this.lblSpecial.BackColor = System.Drawing.Color.Transparent;
+            this.lblSpecial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpecial.ForeColor = System.Drawing.Color.LightGreen;
+            this.lblSpecial.Location = new System.Drawing.Point(960, 270);
+            this.lblSpecial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblSpecial.Name = "lblSpecial";
+            this.lblSpecial.Size = new System.Drawing.Size(83, 29);
+            this.lblSpecial.TabIndex = 183;
+            this.lblSpecial.Text = "Special";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label25.Location = new System.Drawing.Point(960, 126);
+            this.label25.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(132, 29);
+            this.label25.TabIndex = 191;
+            this.label25.Text = "Include Pets";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label24.Location = new System.Drawing.Point(960, 90);
+            this.label24.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(145, 29);
+            this.label24.TabIndex = 189;
+            this.label24.Text = "Include Items";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Orange;
+            this.label23.Location = new System.Drawing.Point(960, 54);
+            this.label23.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(175, 29);
+            this.label23.TabIndex = 187;
+            this.label23.Text = "Only Latest Xpac";
+            // 
+            // img24
+            // 
+            this.img24.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img24.ImageStream")));
+            this.img24.TransparentColor = System.Drawing.Color.Transparent;
+            this.img24.Images.SetKeyName(0, "copy_paste.png");
+            // 
+            // btnBlueWOW
+            // 
+            this.btnBlueWOW.Image = ((System.Drawing.Image)(resources.GetObject("btnBlueWOW.Image")));
+            this.btnBlueWOW.Location = new System.Drawing.Point(540, 458);
+            this.btnBlueWOW.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBlueWOW.Name = "btnBlueWOW";
+            this.btnBlueWOW.Size = new System.Drawing.Size(36, 36);
+            this.btnBlueWOW.TabIndex = 187;
+            this.btnBlueWOW.UseVisualStyleBackColor = true;
+            this.btnBlueWOW.Click += new System.EventHandler(this.btnBlueWOW_Click);
+            // 
+            // lblBlueWOW
+            // 
+            this.lblBlueWOW.BackColor = System.Drawing.Color.Transparent;
+            this.lblBlueWOW.ForeColor = System.Drawing.Color.White;
+            this.lblBlueWOW.Location = new System.Drawing.Point(450, 462);
+            this.lblBlueWOW.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblBlueWOW.Name = "lblBlueWOW";
+            this.lblBlueWOW.Size = new System.Drawing.Size(90, 28);
+            this.lblBlueWOW.TabIndex = 188;
+            this.lblBlueWOW.Text = "-999";
+            this.lblBlueWOW.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnlBlueTeam
+            // 
+            this.pnlBlueTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnlBlueTeam.Location = new System.Drawing.Point(32, 454);
+            this.pnlBlueTeam.Margin = new System.Windows.Forms.Padding(6);
+            this.pnlBlueTeam.Name = "pnlBlueTeam";
+            this.pnlBlueTeam.Size = new System.Drawing.Size(546, 44);
+            this.pnlBlueTeam.TabIndex = 191;
+            // 
+            // txtMoveX
+            // 
+            this.txtMoveX.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoveX.Location = new System.Drawing.Point(2757, 450);
+            this.txtMoveX.Margin = new System.Windows.Forms.Padding(6);
+            this.txtMoveX.Name = "txtMoveX";
+            this.txtMoveX.Size = new System.Drawing.Size(392, 37);
+            this.txtMoveX.TabIndex = 192;
+            this.txtMoveX.Text = "8420";
+            this.txtMoveX.Visible = false;
+            // 
+            // txtMoveY
+            // 
+            this.txtMoveY.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoveY.Location = new System.Drawing.Point(3310, 450);
+            this.txtMoveY.Margin = new System.Windows.Forms.Padding(6);
+            this.txtMoveY.Name = "txtMoveY";
+            this.txtMoveY.Size = new System.Drawing.Size(392, 37);
+            this.txtMoveY.TabIndex = 193;
+            this.txtMoveY.Text = "324";
+            this.txtMoveY.Visible = false;
+            // 
+            // buttonTestMove
+            // 
+            this.buttonTestMove.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTestMove.ForeColor = System.Drawing.Color.Black;
+            this.buttonTestMove.Image = ((System.Drawing.Image)(resources.GetObject("buttonTestMove.Image")));
+            this.buttonTestMove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTestMove.Location = new System.Drawing.Point(2489, 446);
+            this.buttonTestMove.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonTestMove.Name = "buttonTestMove";
+            this.buttonTestMove.Size = new System.Drawing.Size(180, 44);
+            this.buttonTestMove.TabIndex = 194;
+            this.buttonTestMove.Text = " Move";
+            this.buttonTestMove.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTestMove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonTestMove.UseVisualStyleBackColor = true;
+            this.buttonTestMove.Visible = false;
+            this.buttonTestMove.Click += new System.EventHandler(this.buttonTestMove_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(2625, 453);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 34);
+            this.label3.TabIndex = 195;
+            this.label3.Text = "Move X";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5.Location = new System.Drawing.Point(3161, 435);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(182, 34);
+            this.label5.TabIndex = 196;
+            this.label5.Text = "Move Y";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Visible = false;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Transparent;
+            this.label21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label21.Location = new System.Drawing.Point(3116, 456);
+            this.label21.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(182, 34);
+            this.label21.TabIndex = 198;
+            this.label21.Text = "WoW Process Id";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label21.Visible = false;
+            // 
+            // txtWowProcessId
+            // 
+            this.txtWowProcessId.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWowProcessId.Location = new System.Drawing.Point(3282, 461);
+            this.txtWowProcessId.Margin = new System.Windows.Forms.Padding(6);
+            this.txtWowProcessId.Name = "txtWowProcessId";
+            this.txtWowProcessId.Size = new System.Drawing.Size(392, 37);
+            this.txtWowProcessId.TabIndex = 197;
+            this.txtWowProcessId.Text = "46220";
+            this.txtWowProcessId.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(2280, 449);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(216, 38);
+            this.textBox1.TabIndex = 199;
+            this.textBox1.Visible = false;
+            // 
+            // chartTotalAuctions
+            // 
+            this.chartTotalAuctions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
+            chartArea1.Name = "ChartArea1";
+            this.chartTotalAuctions.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartTotalAuctions.Legends.Add(legend1);
+            this.chartTotalAuctions.Location = new System.Drawing.Point(2280, 491);
+            this.chartTotalAuctions.Name = "chartTotalAuctions";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartTotalAuctions.Series.Add(series1);
+            this.chartTotalAuctions.Size = new System.Drawing.Size(1358, 750);
+            this.chartTotalAuctions.TabIndex = 200;
+            this.chartTotalAuctions.Text = "chart1";
+            this.chartTotalAuctions.Visible = false;
+            // 
+            // chartTopSearches
+            // 
+            this.chartTopSearches.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
+            chartArea2.Name = "ChartArea1";
+            this.chartTopSearches.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartTopSearches.Legends.Add(legend2);
+            this.chartTopSearches.Location = new System.Drawing.Point(2280, 1272);
+            this.chartTopSearches.Name = "chartTopSearches";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartTopSearches.Series.Add(series2);
+            this.chartTopSearches.Size = new System.Drawing.Size(1358, 750);
+            this.chartTopSearches.TabIndex = 201;
+            this.chartTopSearches.Text = "chart1";
+            this.chartTopSearches.Visible = false;
+            // 
+            // toolStripMain
+            // 
+            this.toolStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
+            this.toolStripMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStripMain.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.tsbWriteRegionData,
+            this.tsdItemCache,
+            this.tsdPetCache,
+            this.toolStripLabel3,
+            this.tspCache,
+            this.tsbClose,
+            this.tsbWindowMaximize,
+            this.tsbWindowNormal,
+            this.tsbWindowMinimize,
+            this.tsSep1,
+            this.tsbReloadConfigs,
+            this.tsbUtilities,
+            this.tsAccountDetails,
+            this.tsbDoBackup,
+            this.tsbTest});
+            this.toolStripMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStripMain.Location = new System.Drawing.Point(0, 0);
+            this.toolStripMain.Name = "toolStripMain";
+            this.toolStripMain.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.toolStripMain.Size = new System.Drawing.Size(3808, 45);
+            this.toolStripMain.TabIndex = 62;
+            this.toolStripMain.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.AutoSize = false;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(16, 39);
+            // 
+            // tsbWriteRegionData
+            // 
+            this.tsbWriteRegionData.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbWriteRegionData.Image = ((System.Drawing.Image)(resources.GetObject("tsbWriteRegionData.Image")));
+            this.tsbWriteRegionData.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbWriteRegionData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbWriteRegionData.Name = "tsbWriteRegionData";
+            this.tsbWriteRegionData.Size = new System.Drawing.Size(46, 39);
+            this.tsbWriteRegionData.Text = "tsbWriteRegionData";
+            this.tsbWriteRegionData.ToolTipText = "Write Region Data";
+            this.tsbWriteRegionData.Click += new System.EventHandler(this.tsbWriteRegionData_Click);
+            // 
+            // tsdItemCache
+            // 
+            this.tsdItemCache.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsdItemCache.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmUpdateItemCache,
+            this.tsmSortItemCache,
+            this.tsmBuildItemCache});
+            this.tsdItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsdItemCache.Image")));
+            this.tsdItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsdItemCache.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsdItemCache.Name = "tsdItemCache";
+            this.tsdItemCache.Size = new System.Drawing.Size(54, 39);
+            this.tsdItemCache.Text = "toolStripDropDownButton1";
+            // 
+            // tsmUpdateItemCache
+            // 
+            this.tsmUpdateItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmUpdateItemCache.Image")));
+            this.tsmUpdateItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmUpdateItemCache.Name = "tsmUpdateItemCache";
+            this.tsmUpdateItemCache.Size = new System.Drawing.Size(351, 44);
+            this.tsmUpdateItemCache.Text = "Update Item Cache";
+            this.tsmUpdateItemCache.Click += new System.EventHandler(this.tsmUpdateItemCache_Click);
+            // 
+            // tsmSortItemCache
+            // 
+            this.tsmSortItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmSortItemCache.Image")));
+            this.tsmSortItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmSortItemCache.Name = "tsmSortItemCache";
+            this.tsmSortItemCache.Size = new System.Drawing.Size(351, 44);
+            this.tsmSortItemCache.Text = "Sort item Cache";
+            this.tsmSortItemCache.Click += new System.EventHandler(this.tsmSortItemCache_Click);
+            // 
+            // tsmBuildItemCache
+            // 
+            this.tsmBuildItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmBuildItemCache.Image")));
+            this.tsmBuildItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmBuildItemCache.Name = "tsmBuildItemCache";
+            this.tsmBuildItemCache.Size = new System.Drawing.Size(351, 44);
+            this.tsmBuildItemCache.Text = "Build Item Cache";
+            this.tsmBuildItemCache.Click += new System.EventHandler(this.tsmBuildItemCache_Click);
+            // 
+            // tsdPetCache
+            // 
+            this.tsdPetCache.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsdPetCache.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmUpdatePetCache,
+            this.tsmSortPetCache,
+            this.tsmBuildPetCache});
+            this.tsdPetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsdPetCache.Image")));
+            this.tsdPetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsdPetCache.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsdPetCache.Name = "tsdPetCache";
+            this.tsdPetCache.Size = new System.Drawing.Size(54, 39);
+            this.tsdPetCache.Text = "toolStripDropDownButton1";
+            // 
+            // tsmUpdatePetCache
+            // 
+            this.tsmUpdatePetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmUpdatePetCache.Image")));
+            this.tsmUpdatePetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmUpdatePetCache.Name = "tsmUpdatePetCache";
+            this.tsmUpdatePetCache.Size = new System.Drawing.Size(336, 44);
+            this.tsmUpdatePetCache.Text = "Update Pet Cache";
+            this.tsmUpdatePetCache.Click += new System.EventHandler(this.tsmUpdatePetCache_Click);
+            // 
+            // tsmSortPetCache
+            // 
+            this.tsmSortPetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmSortPetCache.Image")));
+            this.tsmSortPetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmSortPetCache.Name = "tsmSortPetCache";
+            this.tsmSortPetCache.Size = new System.Drawing.Size(336, 44);
+            this.tsmSortPetCache.Text = "Sort Pet Cache";
+            this.tsmSortPetCache.Click += new System.EventHandler(this.tsmSortPetCache_Click);
+            // 
+            // tsmBuildPetCache
+            // 
+            this.tsmBuildPetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmBuildPetCache.Image")));
+            this.tsmBuildPetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmBuildPetCache.Name = "tsmBuildPetCache";
+            this.tsmBuildPetCache.Size = new System.Drawing.Size(336, 44);
+            this.tsmBuildPetCache.Text = "Build Pet Cache";
+            this.tsmBuildPetCache.Click += new System.EventHandler(this.tsmBuildPetCache_Click);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.AutoSize = false;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(16, 39);
+            // 
+            // tspCache
+            // 
+            this.tspCache.AutoSize = false;
+            this.tspCache.Name = "tspCache";
+            this.tspCache.Size = new System.Drawing.Size(300, 60);
+            this.tspCache.Visible = false;
+            // 
+            // tsbClose
+            // 
+            this.tsbClose.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbClose.Image = ((System.Drawing.Image)(resources.GetObject("tsbClose.Image")));
+            this.tsbClose.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbClose.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbClose.Name = "tsbClose";
+            this.tsbClose.Size = new System.Drawing.Size(46, 39);
+            this.tsbClose.Text = "Close App";
+            this.tsbClose.ToolTipText = "Reload Configs";
+            this.tsbClose.Click += new System.EventHandler(this.tsbClose_Click);
+            // 
+            // tsbWindowMaximize
+            // 
+            this.tsbWindowMaximize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbWindowMaximize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbWindowMaximize.Image = ((System.Drawing.Image)(resources.GetObject("tsbWindowMaximize.Image")));
+            this.tsbWindowMaximize.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbWindowMaximize.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbWindowMaximize.Name = "tsbWindowMaximize";
+            this.tsbWindowMaximize.Size = new System.Drawing.Size(46, 39);
+            this.tsbWindowMaximize.Text = "Close App";
+            this.tsbWindowMaximize.ToolTipText = "Maximize";
+            this.tsbWindowMaximize.Click += new System.EventHandler(this.tsbWindowMaximize_Click);
+            // 
+            // tsbWindowNormal
+            // 
+            this.tsbWindowNormal.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbWindowNormal.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbWindowNormal.Image = ((System.Drawing.Image)(resources.GetObject("tsbWindowNormal.Image")));
+            this.tsbWindowNormal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbWindowNormal.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbWindowNormal.Name = "tsbWindowNormal";
+            this.tsbWindowNormal.Size = new System.Drawing.Size(46, 66);
+            this.tsbWindowNormal.Text = "Close App";
+            this.tsbWindowNormal.ToolTipText = "Normal";
+            this.tsbWindowNormal.Visible = false;
+            this.tsbWindowNormal.Click += new System.EventHandler(this.tsbWindowNormal_Click);
+            // 
+            // tsbWindowMinimize
+            // 
+            this.tsbWindowMinimize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbWindowMinimize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbWindowMinimize.Image = ((System.Drawing.Image)(resources.GetObject("tsbWindowMinimize.Image")));
+            this.tsbWindowMinimize.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbWindowMinimize.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbWindowMinimize.Name = "tsbWindowMinimize";
+            this.tsbWindowMinimize.Size = new System.Drawing.Size(46, 39);
+            this.tsbWindowMinimize.Text = "Close App";
+            this.tsbWindowMinimize.ToolTipText = "Reload Configs";
+            this.tsbWindowMinimize.Click += new System.EventHandler(this.tsbWindowMinimize_Click);
+            // 
+            // tsSep1
+            // 
+            this.tsSep1.AutoSize = false;
+            this.tsSep1.Name = "tsSep1";
+            this.tsSep1.Size = new System.Drawing.Size(16, 39);
+            // 
+            // tsbReloadConfigs
+            // 
+            this.tsbReloadConfigs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbReloadConfigs.Image = ((System.Drawing.Image)(resources.GetObject("tsbReloadConfigs.Image")));
+            this.tsbReloadConfigs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbReloadConfigs.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbReloadConfigs.Name = "tsbReloadConfigs";
+            this.tsbReloadConfigs.Size = new System.Drawing.Size(46, 39);
+            this.tsbReloadConfigs.Text = "Close App";
+            this.tsbReloadConfigs.ToolTipText = "Reload Configs";
+            this.tsbReloadConfigs.Click += new System.EventHandler(this.tsbReloadConfigs_Click);
+            // 
+            // tsbUtilities
+            // 
+            this.tsbUtilities.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbUtilities.Image = ((System.Drawing.Image)(resources.GetObject("tsbUtilities.Image")));
+            this.tsbUtilities.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbUtilities.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbUtilities.Name = "tsbUtilities";
+            this.tsbUtilities.Size = new System.Drawing.Size(46, 39);
+            this.tsbUtilities.Text = "Utilties";
+            this.tsbUtilities.ToolTipText = "Utilities";
+            this.tsbUtilities.Click += new System.EventHandler(this.tsbUtilities_Click);
+            // 
+            // tsAccountDetails
+            // 
+            this.tsAccountDetails.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsAccountDetails.AutoToolTip = true;
+            this.tsAccountDetails.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsAccountDetails.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.tsAccountDetails.ForeColor = System.Drawing.Color.White;
+            this.tsAccountDetails.Name = "tsAccountDetails";
+            this.tsAccountDetails.Size = new System.Drawing.Size(407, 66);
+            this.tsAccountDetails.Text = "tsAccountDetails";
+            this.tsAccountDetails.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsAccountDetails.Visible = false;
+            // 
+            // tsbDoBackup
+            // 
+            this.tsbDoBackup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbDoBackup.Image = ((System.Drawing.Image)(resources.GetObject("tsbDoBackup.Image")));
+            this.tsbDoBackup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbDoBackup.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbDoBackup.Name = "tsbDoBackup";
+            this.tsbDoBackup.Size = new System.Drawing.Size(46, 39);
+            this.tsbDoBackup.Text = "Do Backup";
+            this.tsbDoBackup.ToolTipText = "Reload Configs";
+            this.tsbDoBackup.Click += new System.EventHandler(this.tsbDoBackup_Click);
+            // 
+            // tsbTest
+            // 
+            this.tsbTest.AutoSize = false;
+            this.tsbTest.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbTest.Image = ((System.Drawing.Image)(resources.GetObject("tsbTest.Image")));
+            this.tsbTest.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbTest.Name = "tsbTest";
+            this.tsbTest.Size = new System.Drawing.Size(36, 39);
+            this.tsbTest.Text = "Test";
+            this.tsbTest.Click += new System.EventHandler(this.tsbTest_Click);
             // 
             // togItemClass_Container
             // 
@@ -1875,22 +2510,6 @@
             this.togItemClass_Reagent.TabIndex = 207;
             this.togItemClass_Reagent.UseVisualStyleBackColor = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.btnSelectNone_Bonuses);
-            this.panel2.Controls.Add(this.btnSelectAll_Bonuses);
-            this.panel2.Controls.Add(this.lblLeech);
-            this.panel2.Controls.Add(this.lblLeg);
-            this.panel2.Controls.Add(this.togBonuses_Leech);
-            this.panel2.Controls.Add(this.togBonuses_Speed);
-            this.panel2.Location = new System.Drawing.Point(18, 250);
-            this.panel2.Margin = new System.Windows.Forms.Padding(8);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(348, 92);
-            this.panel2.TabIndex = 203;
-            // 
             // togBonuses_Leech
             // 
             this.togBonuses_Leech.BackColor = System.Drawing.Color.Transparent;
@@ -1924,32 +2543,6 @@
             this.togBonuses_Speed.Size = new System.Drawing.Size(64, 32);
             this.togBonuses_Speed.TabIndex = 187;
             this.togBonuses_Speed.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.btnSelectNone_ItemQuality);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.btnSelectAll_ItemQuality);
-            this.panel1.Controls.Add(this.togItemQuality_Poor);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.togItemQuality_Artifact);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.togItemQuality_Common);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.togItemQuality_Epic);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.togItemQuality_Legendary);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.togItemQuality_Rare);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.togItemQuality_Uncommon);
-            this.panel1.Location = new System.Drawing.Point(2000, 18);
-            this.panel1.Margin = new System.Windows.Forms.Padding(8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(274, 324);
-            this.panel1.TabIndex = 202;
             // 
             // togItemQuality_Poor
             // 
@@ -2076,17 +2669,6 @@
             this.togItemQuality_Uncommon.TabIndex = 70;
             this.togItemQuality_Uncommon.UseVisualStyleBackColor = false;
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(842, 304);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox10.TabIndex = 201;
-            this.pictureBox10.TabStop = false;
-            // 
             // togDebug
             // 
             this.togDebug.AutoSize = true;
@@ -2105,65 +2687,6 @@
             this.togDebug.TabIndex = 199;
             this.togDebug.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(960, 306);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 29);
-            this.label2.TabIndex = 200;
-            this.label2.Text = "Enable Debug";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(842, 268);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.TabIndex = 198;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(842, 232);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.TabIndex = 197;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(842, 196);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 196;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblThreshold
-            // 
-            this.lblThreshold.AutoSize = true;
-            this.lblThreshold.BackColor = System.Drawing.Color.Transparent;
-            this.lblThreshold.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThreshold.ForeColor = System.Drawing.Color.White;
-            this.lblThreshold.Location = new System.Drawing.Point(458, 304);
-            this.lblThreshold.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblThreshold.Name = "lblThreshold";
-            this.lblThreshold.Size = new System.Drawing.Size(112, 29);
-            this.lblThreshold.TabIndex = 195;
-            this.lblThreshold.Text = "Threshold";
-            // 
             // togSpecial
             // 
             this.togSpecial.AutoSize = true;
@@ -2181,32 +2704,6 @@
             this.togSpecial.Size = new System.Drawing.Size(64, 32);
             this.togSpecial.TabIndex = 182;
             this.togSpecial.UseVisualStyleBackColor = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.PowderBlue;
-            this.label26.Location = new System.Drawing.Point(960, 162);
-            this.label26.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 29);
-            this.label26.TabIndex = 193;
-            this.label26.Text = "Socket";
-            // 
-            // lblSpecial
-            // 
-            this.lblSpecial.AutoSize = true;
-            this.lblSpecial.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpecial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpecial.ForeColor = System.Drawing.Color.LightGreen;
-            this.lblSpecial.Location = new System.Drawing.Point(960, 270);
-            this.lblSpecial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblSpecial.Name = "lblSpecial";
-            this.lblSpecial.Size = new System.Drawing.Size(83, 29);
-            this.lblSpecial.TabIndex = 183;
-            this.lblSpecial.Text = "Special";
             // 
             // togSocket
             // 
@@ -2227,19 +2724,6 @@
             this.togSocket.TabIndex = 192;
             this.togSocket.UseVisualStyleBackColor = false;
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label25.Location = new System.Drawing.Point(960, 126);
-            this.label25.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(132, 29);
-            this.label25.TabIndex = 191;
-            this.label25.Text = "Include Pets";
-            // 
             // togIncludePets
             // 
             this.togIncludePets.BackColor = System.Drawing.Color.Transparent;
@@ -2258,19 +2742,6 @@
             this.togIncludePets.Size = new System.Drawing.Size(64, 32);
             this.togIncludePets.TabIndex = 190;
             this.togIncludePets.UseVisualStyleBackColor = false;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label24.Location = new System.Drawing.Point(960, 90);
-            this.label24.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(145, 29);
-            this.label24.TabIndex = 189;
-            this.label24.Text = "Include Items";
             // 
             // togIgnoreOnlyNewData
             // 
@@ -2307,19 +2778,6 @@
             this.togIncludeItems.Size = new System.Drawing.Size(64, 32);
             this.togIncludeItems.TabIndex = 188;
             this.togIncludeItems.UseVisualStyleBackColor = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Orange;
-            this.label23.Location = new System.Drawing.Point(960, 54);
-            this.label23.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(175, 29);
-            this.label23.TabIndex = 187;
-            this.label23.Text = "Only Latest Xpac";
             // 
             // togOnlyLatestXpac
             // 
@@ -2375,413 +2833,14 @@
             this.togOnlyNewData.TabIndex = 123;
             this.togOnlyNewData.UseVisualStyleBackColor = false;
             // 
-            // img24
-            // 
-            this.img24.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img24.ImageStream")));
-            this.img24.TransparentColor = System.Drawing.Color.Transparent;
-            this.img24.Images.SetKeyName(0, "copy_paste.png");
-            // 
-            // btnBlueWOW
-            // 
-            this.btnBlueWOW.Image = ((System.Drawing.Image)(resources.GetObject("btnBlueWOW.Image")));
-            this.btnBlueWOW.Location = new System.Drawing.Point(540, 458);
-            this.btnBlueWOW.Margin = new System.Windows.Forms.Padding(6);
-            this.btnBlueWOW.Name = "btnBlueWOW";
-            this.btnBlueWOW.Size = new System.Drawing.Size(36, 36);
-            this.btnBlueWOW.TabIndex = 187;
-            this.btnBlueWOW.UseVisualStyleBackColor = true;
-            this.btnBlueWOW.Click += new System.EventHandler(this.btnBlueWOW_Click);
-            // 
-            // lblBlueWOW
-            // 
-            this.lblBlueWOW.BackColor = System.Drawing.Color.Transparent;
-            this.lblBlueWOW.ForeColor = System.Drawing.Color.White;
-            this.lblBlueWOW.Location = new System.Drawing.Point(450, 462);
-            this.lblBlueWOW.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblBlueWOW.Name = "lblBlueWOW";
-            this.lblBlueWOW.Size = new System.Drawing.Size(90, 28);
-            this.lblBlueWOW.TabIndex = 188;
-            this.lblBlueWOW.Text = "-999";
-            this.lblBlueWOW.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pnlBlueTeam
-            // 
-            this.pnlBlueTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pnlBlueTeam.Location = new System.Drawing.Point(32, 454);
-            this.pnlBlueTeam.Margin = new System.Windows.Forms.Padding(6);
-            this.pnlBlueTeam.Name = "pnlBlueTeam";
-            this.pnlBlueTeam.Size = new System.Drawing.Size(546, 44);
-            this.pnlBlueTeam.TabIndex = 191;
-            // 
-            // txtMoveX
-            // 
-            this.txtMoveX.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoveX.Location = new System.Drawing.Point(3045, 487);
-            this.txtMoveX.Margin = new System.Windows.Forms.Padding(6);
-            this.txtMoveX.Name = "txtMoveX";
-            this.txtMoveX.Size = new System.Drawing.Size(392, 37);
-            this.txtMoveX.TabIndex = 192;
-            this.txtMoveX.Text = "8420";
-            // 
-            // txtMoveY
-            // 
-            this.txtMoveY.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoveY.Location = new System.Drawing.Point(3045, 547);
-            this.txtMoveY.Margin = new System.Windows.Forms.Padding(6);
-            this.txtMoveY.Name = "txtMoveY";
-            this.txtMoveY.Size = new System.Drawing.Size(392, 37);
-            this.txtMoveY.TabIndex = 193;
-            this.txtMoveY.Text = "324";
-            // 
-            // buttonTestMove
-            // 
-            this.buttonTestMove.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTestMove.ForeColor = System.Drawing.Color.Black;
-            this.buttonTestMove.Image = ((System.Drawing.Image)(resources.GetObject("buttonTestMove.Image")));
-            this.buttonTestMove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTestMove.Location = new System.Drawing.Point(2637, 627);
-            this.buttonTestMove.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonTestMove.Name = "buttonTestMove";
-            this.buttonTestMove.Size = new System.Drawing.Size(180, 44);
-            this.buttonTestMove.TabIndex = 194;
-            this.buttonTestMove.Text = " Move";
-            this.buttonTestMove.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTestMove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonTestMove.UseVisualStyleBackColor = true;
-            this.buttonTestMove.Click += new System.EventHandler(this.buttonTestMove_Click);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Location = new System.Drawing.Point(2862, 487);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 34);
-            this.label3.TabIndex = 195;
-            this.label3.Text = "Move X";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Location = new System.Drawing.Point(2862, 547);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 34);
-            this.label5.TabIndex = 196;
-            this.label5.Text = "Move Y";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Transparent;
-            this.label21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label21.Location = new System.Drawing.Point(2862, 637);
-            this.label21.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(182, 34);
-            this.label21.TabIndex = 198;
-            this.label21.Text = "WoW Process Id";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtWowProcessId
-            // 
-            this.txtWowProcessId.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWowProcessId.Location = new System.Drawing.Point(3045, 637);
-            this.txtWowProcessId.Margin = new System.Windows.Forms.Padding(6);
-            this.txtWowProcessId.Name = "txtWowProcessId";
-            this.txtWowProcessId.Size = new System.Drawing.Size(392, 37);
-            this.txtWowProcessId.TabIndex = 197;
-            this.txtWowProcessId.Text = "46220";
-            // 
-            // toolStripMain
-            // 
-            this.toolStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
-            this.toolStripMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripMain.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.tsbWriteRegionData,
-            this.tsdItemCache,
-            this.tsdPetCache,
-            this.toolStripLabel3,
-            this.tspCache,
-            this.tsbClose,
-            this.tsbWindowMaximize,
-            this.tsbWindowNormal,
-            this.tsbWindowMinimize,
-            this.tsSep1,
-            this.tsbReloadConfigs,
-            this.tsbUtilities,
-            this.tsAccountDetails,
-            this.tsbDoBackup,
-            this.tsbTest});
-            this.toolStripMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.toolStripMain.Location = new System.Drawing.Point(0, 0);
-            this.toolStripMain.Name = "toolStripMain";
-            this.toolStripMain.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.toolStripMain.Size = new System.Drawing.Size(3808, 72);
-            this.toolStripMain.TabIndex = 62;
-            this.toolStripMain.Text = "toolStrip1";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.AutoSize = false;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(16, 39);
-            // 
-            // tsbWriteRegionData
-            // 
-            this.tsbWriteRegionData.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbWriteRegionData.Image = ((System.Drawing.Image)(resources.GetObject("tsbWriteRegionData.Image")));
-            this.tsbWriteRegionData.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbWriteRegionData.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbWriteRegionData.Name = "tsbWriteRegionData";
-            this.tsbWriteRegionData.Size = new System.Drawing.Size(46, 66);
-            this.tsbWriteRegionData.Text = "tsbWriteRegionData";
-            this.tsbWriteRegionData.ToolTipText = "Write Region Data";
-            this.tsbWriteRegionData.Click += new System.EventHandler(this.tsbWriteRegionData_Click);
-            // 
-            // tsdItemCache
-            // 
-            this.tsdItemCache.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsdItemCache.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmUpdateItemCache,
-            this.tsmSortItemCache,
-            this.tsmBuildItemCache});
-            this.tsdItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsdItemCache.Image")));
-            this.tsdItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsdItemCache.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsdItemCache.Name = "tsdItemCache";
-            this.tsdItemCache.Size = new System.Drawing.Size(54, 66);
-            this.tsdItemCache.Text = "toolStripDropDownButton1";
-            // 
-            // tsmUpdateItemCache
-            // 
-            this.tsmUpdateItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmUpdateItemCache.Image")));
-            this.tsmUpdateItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmUpdateItemCache.Name = "tsmUpdateItemCache";
-            this.tsmUpdateItemCache.Size = new System.Drawing.Size(351, 44);
-            this.tsmUpdateItemCache.Text = "Update Item Cache";
-            this.tsmUpdateItemCache.Click += new System.EventHandler(this.tsmUpdateItemCache_Click);
-            // 
-            // tsmSortItemCache
-            // 
-            this.tsmSortItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmSortItemCache.Image")));
-            this.tsmSortItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmSortItemCache.Name = "tsmSortItemCache";
-            this.tsmSortItemCache.Size = new System.Drawing.Size(351, 44);
-            this.tsmSortItemCache.Text = "Sort item Cache";
-            this.tsmSortItemCache.Click += new System.EventHandler(this.tsmSortItemCache_Click);
-            // 
-            // tsmBuildItemCache
-            // 
-            this.tsmBuildItemCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmBuildItemCache.Image")));
-            this.tsmBuildItemCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmBuildItemCache.Name = "tsmBuildItemCache";
-            this.tsmBuildItemCache.Size = new System.Drawing.Size(351, 44);
-            this.tsmBuildItemCache.Text = "Build Item Cache";
-            this.tsmBuildItemCache.Click += new System.EventHandler(this.tsmBuildItemCache_Click);
-            // 
-            // tsdPetCache
-            // 
-            this.tsdPetCache.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsdPetCache.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmUpdatePetCache,
-            this.tsmSortPetCache,
-            this.tsmBuildPetCache});
-            this.tsdPetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsdPetCache.Image")));
-            this.tsdPetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsdPetCache.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsdPetCache.Name = "tsdPetCache";
-            this.tsdPetCache.Size = new System.Drawing.Size(54, 66);
-            this.tsdPetCache.Text = "toolStripDropDownButton1";
-            // 
-            // tsmUpdatePetCache
-            // 
-            this.tsmUpdatePetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmUpdatePetCache.Image")));
-            this.tsmUpdatePetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmUpdatePetCache.Name = "tsmUpdatePetCache";
-            this.tsmUpdatePetCache.Size = new System.Drawing.Size(336, 44);
-            this.tsmUpdatePetCache.Text = "Update Pet Cache";
-            this.tsmUpdatePetCache.Click += new System.EventHandler(this.tsmUpdatePetCache_Click);
-            // 
-            // tsmSortPetCache
-            // 
-            this.tsmSortPetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmSortPetCache.Image")));
-            this.tsmSortPetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmSortPetCache.Name = "tsmSortPetCache";
-            this.tsmSortPetCache.Size = new System.Drawing.Size(336, 44);
-            this.tsmSortPetCache.Text = "Sort Pet Cache";
-            this.tsmSortPetCache.Click += new System.EventHandler(this.tsmSortPetCache_Click);
-            // 
-            // tsmBuildPetCache
-            // 
-            this.tsmBuildPetCache.Image = ((System.Drawing.Image)(resources.GetObject("tsmBuildPetCache.Image")));
-            this.tsmBuildPetCache.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmBuildPetCache.Name = "tsmBuildPetCache";
-            this.tsmBuildPetCache.Size = new System.Drawing.Size(336, 44);
-            this.tsmBuildPetCache.Text = "Build Pet Cache";
-            this.tsmBuildPetCache.Click += new System.EventHandler(this.tsmBuildPetCache_Click);
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.AutoSize = false;
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(16, 39);
-            // 
-            // tspCache
-            // 
-            this.tspCache.AutoSize = false;
-            this.tspCache.Name = "tspCache";
-            this.tspCache.Size = new System.Drawing.Size(300, 60);
-            // 
-            // tsbClose
-            // 
-            this.tsbClose.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbClose.Image = ((System.Drawing.Image)(resources.GetObject("tsbClose.Image")));
-            this.tsbClose.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbClose.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbClose.Name = "tsbClose";
-            this.tsbClose.Size = new System.Drawing.Size(46, 66);
-            this.tsbClose.Text = "Close App";
-            this.tsbClose.ToolTipText = "Reload Configs";
-            this.tsbClose.Click += new System.EventHandler(this.tsbClose_Click);
-            // 
-            // tsbWindowMaximize
-            // 
-            this.tsbWindowMaximize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbWindowMaximize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbWindowMaximize.Image = ((System.Drawing.Image)(resources.GetObject("tsbWindowMaximize.Image")));
-            this.tsbWindowMaximize.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbWindowMaximize.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbWindowMaximize.Name = "tsbWindowMaximize";
-            this.tsbWindowMaximize.Size = new System.Drawing.Size(46, 66);
-            this.tsbWindowMaximize.Text = "Close App";
-            this.tsbWindowMaximize.ToolTipText = "Maximize";
-            this.tsbWindowMaximize.Click += new System.EventHandler(this.tsbWindowMaximize_Click);
-            // 
-            // tsbWindowNormal
-            // 
-            this.tsbWindowNormal.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbWindowNormal.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbWindowNormal.Image = ((System.Drawing.Image)(resources.GetObject("tsbWindowNormal.Image")));
-            this.tsbWindowNormal.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbWindowNormal.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbWindowNormal.Name = "tsbWindowNormal";
-            this.tsbWindowNormal.Size = new System.Drawing.Size(46, 66);
-            this.tsbWindowNormal.Text = "Close App";
-            this.tsbWindowNormal.ToolTipText = "Normal";
-            this.tsbWindowNormal.Visible = false;
-            this.tsbWindowNormal.Click += new System.EventHandler(this.tsbWindowNormal_Click);
-            // 
-            // tsbWindowMinimize
-            // 
-            this.tsbWindowMinimize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbWindowMinimize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbWindowMinimize.Image = ((System.Drawing.Image)(resources.GetObject("tsbWindowMinimize.Image")));
-            this.tsbWindowMinimize.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbWindowMinimize.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbWindowMinimize.Name = "tsbWindowMinimize";
-            this.tsbWindowMinimize.Size = new System.Drawing.Size(46, 66);
-            this.tsbWindowMinimize.Text = "Close App";
-            this.tsbWindowMinimize.ToolTipText = "Reload Configs";
-            this.tsbWindowMinimize.Click += new System.EventHandler(this.tsbWindowMinimize_Click);
-            // 
-            // tsSep1
-            // 
-            this.tsSep1.AutoSize = false;
-            this.tsSep1.Name = "tsSep1";
-            this.tsSep1.Size = new System.Drawing.Size(16, 39);
-            // 
-            // tsbReloadConfigs
-            // 
-            this.tsbReloadConfigs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbReloadConfigs.Image = ((System.Drawing.Image)(resources.GetObject("tsbReloadConfigs.Image")));
-            this.tsbReloadConfigs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbReloadConfigs.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbReloadConfigs.Name = "tsbReloadConfigs";
-            this.tsbReloadConfigs.Size = new System.Drawing.Size(46, 66);
-            this.tsbReloadConfigs.Text = "Close App";
-            this.tsbReloadConfigs.ToolTipText = "Reload Configs";
-            this.tsbReloadConfigs.Click += new System.EventHandler(this.tsbReloadConfigs_Click);
-            // 
-            // tsbUtilities
-            // 
-            this.tsbUtilities.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbUtilities.Image = ((System.Drawing.Image)(resources.GetObject("tsbUtilities.Image")));
-            this.tsbUtilities.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbUtilities.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbUtilities.Name = "tsbUtilities";
-            this.tsbUtilities.Size = new System.Drawing.Size(46, 66);
-            this.tsbUtilities.Text = "Utilties";
-            this.tsbUtilities.ToolTipText = "Utilities";
-            this.tsbUtilities.Click += new System.EventHandler(this.tsbUtilities_Click);
-            // 
-            // tsAccountDetails
-            // 
-            this.tsAccountDetails.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsAccountDetails.AutoToolTip = true;
-            this.tsAccountDetails.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsAccountDetails.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.tsAccountDetails.ForeColor = System.Drawing.Color.White;
-            this.tsAccountDetails.Name = "tsAccountDetails";
-            this.tsAccountDetails.Size = new System.Drawing.Size(407, 66);
-            this.tsAccountDetails.Text = "tsAccountDetails";
-            this.tsAccountDetails.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // tsbDoBackup
-            // 
-            this.tsbDoBackup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbDoBackup.Image = ((System.Drawing.Image)(resources.GetObject("tsbDoBackup.Image")));
-            this.tsbDoBackup.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbDoBackup.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbDoBackup.Name = "tsbDoBackup";
-            this.tsbDoBackup.Size = new System.Drawing.Size(46, 66);
-            this.tsbDoBackup.Text = "Do Backup";
-            this.tsbDoBackup.ToolTipText = "Reload Configs";
-            this.tsbDoBackup.Click += new System.EventHandler(this.tsbDoBackup_Click);
-            // 
-            // tsbTest
-            // 
-            this.tsbTest.AutoSize = false;
-            this.tsbTest.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbTest.Image = ((System.Drawing.Image)(resources.GetObject("tsbTest.Image")));
-            this.tsbTest.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbTest.Name = "tsbTest";
-            this.tsbTest.Size = new System.Drawing.Size(36, 39);
-            this.tsbTest.Text = "Test";
-            this.tsbTest.Click += new System.EventHandler(this.tsbTest_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(2309, 759);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(1407, 1228);
-            this.textBox1.TabIndex = 199;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.ClientSize = new System.Drawing.Size(3808, 2044);
+            this.Controls.Add(this.chartTopSearches);
+            this.Controls.Add(this.chartTotalAuctions);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.txtWowProcessId);
@@ -2796,7 +2855,6 @@
             this.Controls.Add(this.btnSelectAll_Realms);
             this.Controls.Add(this.toolStripMain);
             this.Controls.Add(this.lvwAuctionsBlue);
-            this.Controls.Add(this.btnGetAuctionData);
             this.Controls.Add(this.lvwRealms);
             this.Controls.Add(this.pnlBlueTeam);
             this.Controls.Add(this.pnlSearchParamsBack);
@@ -2839,6 +2897,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTotalAuctions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTopSearches)).EndInit();
             this.toolStripMain.ResumeLayout(false);
             this.toolStripMain.PerformLayout();
             this.ResumeLayout(false);
@@ -3035,6 +3095,8 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtWowProcessId;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTotalAuctions;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTopSearches;
     }
 }
 
